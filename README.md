@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# myfavmods - Free content for games and apps!
 
 This is my list of free content mods, addons and other stuff for different games and apps. Enjoy it!
 
