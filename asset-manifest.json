@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Pinsho/myfavmods.git/static/css/main.f9a0fe24.css",
+    "main.js": "/Pinsho/myfavmods.git/static/js/main.05de027b.js",
+    "index.html": "/Pinsho/myfavmods.git/index.html",
+    "main.f9a0fe24.css.map": "/Pinsho/myfavmods.git/static/css/main.f9a0fe24.css.map",
+    "main.05de027b.js.map": "/Pinsho/myfavmods.git/static/js/main.05de027b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f9a0fe24.css",
+    "static/js/main.05de027b.js"
+  ]
+}
