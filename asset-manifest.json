@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/Pinsho/myfavmods.git/static/css/main.f9a0fe24.css",
-    "main.js": "/Pinsho/myfavmods.git/static/js/main.ee287f1f.js",
+    "main.js": "/Pinsho/myfavmods.git/static/js/main.e25c63a7.js",
     "index.html": "/Pinsho/myfavmods.git/index.html",
     "main.f9a0fe24.css.map": "/Pinsho/myfavmods.git/static/css/main.f9a0fe24.css.map",
-    "main.ee287f1f.js.map": "/Pinsho/myfavmods.git/static/js/main.ee287f1f.js.map"
+    "main.e25c63a7.js.map": "/Pinsho/myfavmods.git/static/js/main.e25c63a7.js.map"
   },
   "entrypoints": [
     "static/css/main.f9a0fe24.css",
-    "static/js/main.ee287f1f.js"
+    "static/js/main.e25c63a7.js"
   ]
 }
