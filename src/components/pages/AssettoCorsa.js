@@ -1,0 +1,22 @@
+import React, { Component } from 'react';
+import logomsfs from '../../img/ac.png';
+import Footer from '../../Footer';
+
+
+export default class AssettoCorsa extends Component{
+    render() {
+        return (
+            <div>
+                <div className='sectionHeader'>
+                    <div className="imgLogo">
+                        <a href="/msfs2020"><img src={logomsfs} height={64} alt="Assetto Corsa"/></a>
+                    </div>
+                    <div className='sectionTitle'>
+                        <h2>Assetto Corsa</h2>
+                    </div>
+                </div>
+            </div>
+            
+        );
+    }
+}
