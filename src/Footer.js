@@ -7,12 +7,12 @@ export default class Contact extends Component {
                 <div className='footerText'>
                     <span>Copyright © 2022 myfavmods by Pinsho </span>
                     <span className='socials'>
-                        <a href="https://instagram.com/pinsho" target="_blank" rel="noreferrer">
+                        <a href="https://instagram.com/pinsho" target="_blank" >
                             <i className='bx bxl-instagram instagram'></i>
                         </a>
                     </span>
                     <span className='socials'>
-                        <a href="https://twitter.com/pinsho" target="_blank" rel="noreferrer">
+                        <a href="https://twitter.com/pinsho" target="_blank" >
                             <i className='bx bxl-twitter twitter'></i>
                         </a>
                     </span>
