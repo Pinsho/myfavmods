@@ -37,6 +37,17 @@ html, body {
   align-items: center;
   margin-right: 15px;
   padding: 5px;
+  width: auto;
+}
+
+.ow {
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.long {
+  overflow-wrap: break-word;
+  max-width: 100%;
 }
 
 /* .wrapper img {
@@ -58,6 +69,7 @@ html, body {
 }
 
 .wrapper span {
+
   margin-left: 10px;
 }
 
@@ -101,7 +113,8 @@ code {
 
 .homeGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 500px);
+  max-width: 100%;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   gap: 5px;
   padding: 10px 0;
   justify-content: left;
