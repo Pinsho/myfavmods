@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Navbar, NavDropdown, Form, FormControl, Button, Nav } from 'react-bootstrap'
+import { Navbar, NavDropdown, Nav } from 'react-bootstrap'
 import {
     BrowserRouter as Router,
     Routes,
@@ -8,7 +8,6 @@ import {
 } from "react-router-dom";
 
 import Home from './pages/Home';
-import Contact from './pages/Contact';
 import DCS from './pages/DCS';
 import MSFS2020 from './pages/MSFS2020';
 import Rfactor2 from './pages/Rfactor2';
@@ -20,7 +19,7 @@ export default class NavbarComp extends Component {
             <Router>
                 <div>
                     <Navbar bg="dark" variant={"dark"} expand="lg">
-                        <Navbar.Brand as={Link} to="/"><i className='bx bx-extension logo'></i><span className='logoText'>myfavmods</span></Navbar.Brand>
+                        <Navbar.Brand as={Link} to="/myfavmods"><i className='bx bx-extension logo'></i><span className='logoText'>myfavmods</span></Navbar.Brand>
                         <Navbar.Toggle aria-controls="navbarScroll" />
                         <Navbar.Collapse id="navbarScroll">
                             <Nav
