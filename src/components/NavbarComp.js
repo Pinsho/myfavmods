@@ -17,8 +17,7 @@ import AssettoCorsa from './pages/AssettoCorsa';
 export default class NavbarComp extends Component {
     render() {
         return (
-            
-            <Router basename='/'>
+            <Router>
                 <div>
                     <Navbar bg="dark" variant={"dark"} expand="lg">
                         <Navbar.Brand as={Link} to="/"><i className='bx bx-extension logo'></i><span className='logoText'>myfavmods</span></Navbar.Brand>
@@ -42,7 +41,6 @@ export default class NavbarComp extends Component {
                                 </NavDropdown>
                                 {/* <Nav.Link as={Link} to="/contact">Contact</Nav.Link> */}
                             </Nav>
-
                         </Navbar.Collapse>
                     </Navbar>
                 </div>

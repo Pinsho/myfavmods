@@ -37,6 +37,24 @@ ul {
     padding: .8rem;
 }
 
+.cardBody a:hover {
+    background-color: #e09f06;
+    border-color: #ce9206;
+}
+
+.cardBody a {
+    color: #fff !important;
+    text-decoration: none;
+} 
+
+.cardBody a:visited {
+    color: #fff !important;
+}
+
+.cardBody a:focus {
+    color: #6e6e6e !important;
+}
+
 .title {
     font-size: .9rem;
     font-weight: 600;

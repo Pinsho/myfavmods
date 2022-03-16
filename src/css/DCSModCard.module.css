@@ -24,6 +24,24 @@
     padding: .8rem;
 }
 
+.cardBody a:hover {
+    background-color: #e09f06;
+    border-color: #ce9206;
+}
+
+.cardBody a {
+    color: #fff !important;
+    text-decoration: none;
+} 
+
+.cardBody a:visited {
+    color: #fff !important;
+}
+
+.cardBody a:focus {
+    color: #6e6e6e !important;
+}
+
 .title {
     font-size: .9rem;
     font-weight: 600;
@@ -66,15 +84,6 @@
 .downloadButton:hover {
     background-color: #e09f06;
     border-color: #ce9206;
-}
-
-.downloadButton a {
-    color: #fff !important;
-    text-decoration: none;
-} 
-
-.downloadButton a:visited {
-    color: #fff !important;
 }
 
 .info {
