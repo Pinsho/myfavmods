@@ -10,7 +10,14 @@ export function DCSOtherGrid() {
 
     useEffect(() => {
         base("dcsother")
-        .select({ view: "Grid view" })
+        .select({ 
+            view: "Grid view",
+            sort:[
+                {
+                    field: 'Name', direction: 'asc'
+                }
+            ],
+        })
         .eachPage((records, fetchNextPage) => {
             setOther(records)
             fetchNextPage();

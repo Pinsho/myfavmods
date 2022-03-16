@@ -10,7 +10,14 @@ export function ACCarsGrid() {
 
     useEffect(() => {
         base("accars")
-            .select({ view: "Grid view" })
+        .select({ 
+            view: "Grid view",
+            sort:[
+                {
+                    field: 'Name', direction: 'asc'
+                }
+            ],
+        })
             .eachPage((records, fetchNextPage) => {
                 setMods(records)
                 fetchNextPage();

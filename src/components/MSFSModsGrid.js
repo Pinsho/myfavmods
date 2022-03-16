@@ -10,7 +10,14 @@ export function MSFSModsGrid() {
 
     useEffect(() => {
         base("msfsmods")
-            .select({ view: "Grid view" })
+        .select({ 
+            view: "Grid view",
+            sort:[
+                {
+                    field: 'Name', direction: 'asc'
+                }
+            ],
+        })
             .eachPage((records, fetchNextPage) => {
                 setMods(records)
                 fetchNextPage();

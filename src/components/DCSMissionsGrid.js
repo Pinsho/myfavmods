@@ -10,7 +10,14 @@ export function DCSMissionsGrid() {
 
     useEffect(() => {
         base("dcsmissions")
-        .select({ view: "Grid view" })
+        .select({ 
+            view: "Grid view",
+            sort:[
+                {
+                    field: 'Title', direction: 'asc'
+                }
+            ],
+        })
         .eachPage((records, fetchNextPage) => {
             setMissions(records)
             fetchNextPage();

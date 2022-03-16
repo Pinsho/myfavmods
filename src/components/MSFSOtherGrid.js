@@ -10,7 +10,14 @@ export function MSFSOtherGrid() {
 
     useEffect(() => {
         base("msfsother")
-            .select({ view: "Grid view" })
+        .select({ 
+            view: "Grid view",
+            sort:[
+                {
+                    field: 'Name', direction: 'asc'
+                }
+            ],
+        })
             .eachPage((records, fetchNextPage) => {
                 setMods(records)
                 fetchNextPage();

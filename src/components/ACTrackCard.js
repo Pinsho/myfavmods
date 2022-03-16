@@ -10,7 +10,7 @@ export const ACTrackCard = ({ track }) => {
             <div className={styles.cardBody}>
                 <div className={styles.title}>{track.fields.Name}</div>
                 <div className={styles.type}><i className='bx bxs-map' ></i>{track.fields.Location}</div>
-                <div className={styles.type}><i class='bx bxs-ruler' ></i>{track.fields.Length}</div>
+                <div className={styles.type}><i className='bx bxs-ruler' ></i>{track.fields.Length}</div>
                 <div><a href={track.fields.URL} target="_blank" rel="noreferrer" className={styles.downloadButton}>Download</a></div>
             </div>
         </li>

@@ -125,12 +125,15 @@ code {
 }
 
 .homeSection {
-  display: inline-block;
-  white-space: nowrap;
-  font-size: 1rem;
+  background: rgb(33,37,41);
+  background: linear-gradient(180deg, rgba(33,37,41,1) 0%, rgba(170,170,170,0) 100%);
+  width: 11%;
+  font-size: 1.5rem;
   margin-top: 20px;
   padding: 5px;
   border-radius: 5px;
+  text-align: center;
+  color: rgb(206, 206, 206);
 }
 
 .homeSection a {
@@ -139,6 +142,10 @@ code {
 }
 .homeSection:visited {
   color: #fff;
+}
+.homeSection i {
+  font-size: 1.5rem !important;
+  margin-right: 10px;
 }
 
 .homeImg {
