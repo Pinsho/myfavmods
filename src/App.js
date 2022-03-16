@@ -8,8 +8,7 @@ export default function App() {
   return (
     <div className='content'> 
       <header>
-          {/* <NavbarComp /> */}
-          <MSFS2020/>
+          <NavbarComp />
       </header>
       <main>
       </main>
