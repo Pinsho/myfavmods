@@ -8,10 +8,10 @@ export default class Contact extends Component {
                 <h4>At the moment, you can try the following categories (more to be added soon)</h4>
                 <div className='sectionHome'>
                     <div className="imgLogo">
-                        <a href="/myfavmods/dcs"><img src={logodcs} height={64} alt="DCS World"/></a>
+                        <a href="/dcs"><img src={logodcs} height={64} alt="DCS World"/></a>
                     </div>
                     <div className='homeTitle'>
-                        <h5><a href="/myfavmods/dcs">Digital Combat Simulator World</a></h5>
+                        <h5><a href="/dcs">Digital Combat Simulator World</a></h5>
                     </div>
                 </div>
                 {/* <div className='homeFooter'>
