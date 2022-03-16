@@ -36,7 +36,7 @@ html, body {
   display: flex;
   align-items: center;
   margin-right: 15px;
-  padding: 5px;
+  padding: 10px;
   width: auto;
 }
 
@@ -112,12 +112,16 @@ code {
 }
 
 .homeGrid {
+  position: relative;
   display: grid;
   max-width: 100%;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   gap: 5px;
-  padding: 10px 0;
+  padding: 10px 10px;
   justify-content: left;
+  background: #212529;
+  margin-right: 15px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .home {
@@ -150,6 +154,7 @@ code {
 }
 
 .homeSection {
+  position: relative;
   background: rgb(33,37,41);
   width: 275px;
   font-size: 1.5rem;
@@ -159,7 +164,7 @@ code {
   border-top-right-radius: 5px;
   text-align: center;
   color: rgb(206, 206, 206);
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  z-index: 5;
 }
 
 .homeSection-tab {

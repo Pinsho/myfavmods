@@ -9,7 +9,7 @@ export default class Contact extends Component {
         return (
             <div className='home'>
                 <div className='homeSection'><i className='bx bxs-plane-alt'></i>Flight Simulation</div>
-                <div className='homeSection-tab'></div>
+                {/* <div className='homeSection-tab'></div> */}
                 <ul className='homeGrid'>
                     <div className='wrapper'>
                         <Link to="/myfavmods/dcs"><img src={logodcs} height={64} alt="DCS World"/></Link>
@@ -22,7 +22,7 @@ export default class Contact extends Component {
                 </ul>
                 
                 <div className='homeSection'><i className='bx bxs-car' ></i>Motor Simulation</div>
-                <div className='homeSection-tab'></div>
+                {/* <div className='homeSection-tab'></div> */}
                 <ul className='homeGrid'>
                     <div className='wrapper'>
                         <Link to="/myfavmods/assettocorsa"><img src={logoac} height={64} alt="Assetto Corsa"/></Link>
