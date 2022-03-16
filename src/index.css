@@ -50,9 +50,9 @@ html, body {
   max-width: 100%;
 }
 
-/* .wrapper img {
-  margin-left: 15px;
-} */
+.wrapper img {
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
 
 .wrapper a {
   text-decoration: none;
