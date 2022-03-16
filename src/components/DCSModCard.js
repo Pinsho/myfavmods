@@ -10,8 +10,12 @@ export const DCSModCard = ({ mod }) => {
             <div className={styles.cardBody}>
                 <div className={styles.title}>{mod.fields.Unit}</div>
                 <div className={styles.type}><i className='bx bx-info-circle' ></i>{mod.fields.Type}</div>
-                <div className={styles.downloadButton}><a href={mod.fields.URL} target="_blank" rel="noreferrer">Download</a></div>
+                <div><a href={mod.fields.URL} target="_blank" rel="noreferrer" className={styles.downloadButton}>Download</a></div>
             </div>
         </li>
     );
 }   
+
+
+
+

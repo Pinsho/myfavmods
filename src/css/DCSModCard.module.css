@@ -69,12 +69,12 @@
 }
 
 .downloadButton a {
-    color: #fff;
+    color: #fff !important;
     text-decoration: none;
 } 
 
 .downloadButton a:visited {
-    color: #fff;
+    color: #fff !important;
 }
 
 .info {

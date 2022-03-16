@@ -27,6 +27,22 @@ html, body {
   color: white;
 }
 
+a {
+  color: #fff;
+}
+
+a:hover {
+  color: #fff;
+}
+
+a:visited {
+  color: #fff;
+}
+
+a:active {
+  color: grey;
+}
+
 .content {
   flex: 1 0 auto;
 }
