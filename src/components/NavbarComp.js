@@ -18,10 +18,10 @@ export default class NavbarComp extends Component {
     render() {
         return (
             
-            <Router>
+            <Router basename='/'>
                 <div>
                     <Navbar bg="dark" variant={"dark"} expand="lg">
-                        <Navbar.Brand as={Link} to="/myfavmods"><i className='bx bx-extension logo'></i><span className='logoText'>myfavmods</span></Navbar.Brand>
+                        <Navbar.Brand as={Link} to="/"><i className='bx bx-extension logo'></i><span className='logoText'>myfavmods</span></Navbar.Brand>
                         <Navbar.Toggle aria-controls="navbarScroll" />
                         <Navbar.Collapse id="navbarScroll">
                             <Nav
