@@ -1,3 +1,6 @@
+
+
+
 .modCard {
     list-style: none;
     background-clip: border-box;
@@ -22,8 +25,8 @@
 }
 
 .cardBody a:hover {
-    background-color: #e09f06;
-    border-color: #ce9206;
+    background-color: #b11b31;
+    border-color: #961529;
 }
 
 .cardBody a {
@@ -36,7 +39,7 @@
 }
 
 .cardBody a:active {
-    color: #6e6e6e !important;
+    color: #212529 !important;
 }
 
 .title {
@@ -54,8 +57,8 @@
 
 .downloadButton {
     margin-top: 10px;
-    background-color: #efbb43;
-    border-color: #dfaf3f;
+    background-color: #C21D37;
+    border-color: #a1192d;
     width: 100%;
     border: 1px solid transparent;
     border-top-color: transparent;
@@ -79,8 +82,8 @@
 }
 
 .downloadButton:hover {
-    background-color: #e09f06;
-    border-color: #ce9206;
+    background-color: #0379ac;
+    border-color: #026792;
 }
 
 .info {

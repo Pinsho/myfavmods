@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import logomsfs from '../../img/ac.png';
-import Footer from '../../Footer';
+import { ACCarsGrid } from '../ACCarsGrid';
+import { ACTracksGrid } from '../ACTracksGrid';
+import { ACOtherGrid } from '../ACOtherGrid';
 
 
 export default class AssettoCorsa extends Component{
@@ -15,6 +17,9 @@ export default class AssettoCorsa extends Component{
                         <h2>Assetto Corsa</h2>
                     </div>
                 </div>
+                <ACCarsGrid/>
+                <ACTracksGrid/>
+                <ACOtherGrid/>
             </div>
             
         );

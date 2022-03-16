@@ -36,7 +36,7 @@ export default class NavbarComp extends Component {
                                 </NavDropdown>
                                 <NavDropdown title="Motor Sim" id="basic-nav-dropdown">
                                 <NavDropdown.Item as={Link} to="/myfavmods/assettocorsa">Assetto Corsa</NavDropdown.Item>
-                                <NavDropdown.Item as={Link} to="/myfavmods/rfactor2">rFactor 2</NavDropdown.Item>
+                                {/* <NavDropdown.Item as={Link} to="/myfavmods/rfactor2">rFactor 2</NavDropdown.Item> */}
                                 </NavDropdown>
                                 {/* <Nav.Link as={Link} to="/contact">Contact</Nav.Link> */}
                             </Nav>
@@ -48,7 +48,7 @@ export default class NavbarComp extends Component {
                         <Route path="/myfavmods/" element={<Home/>}/>
                         <Route path="/myfavmods/dcs" element={<DCS/>}/>
                         <Route path="/myfavmods/msfs2020" element={<MSFS2020/>}/>
-                        <Route path="/myfavmods/rfactor2" element={<Rfactor2/>}/>
+                        {/* <Route path="/myfavmods/rfactor2" element={<Rfactor2/>}/> */}
                         <Route path="/myfavmods/assettocorsa" element={<AssettoCorsa/>}/>
                         {/* <Route path="/contact" element={<Contact/>}/> */}
                     </Routes>
