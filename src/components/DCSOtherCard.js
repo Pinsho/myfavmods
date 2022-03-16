@@ -8,7 +8,7 @@ export const DCSOtherCard = ({ other }) => {
             <div className={styles.cardBody}>
                 <div className={styles.title}>{other.fields.Name}</div>
                 <div className={styles.type}><i className='bx bx-info-circle' ></i>{other.fields.Type}</div>
-                <div className={styles.downloadButton}><a href={other.fields.URL} target="_blank" >Download</a></div>
+                <div className={styles.downloadButton}><a href={other.fields.URL} target="_blank" rel="noreferrer">Download</a></div>
             </div>
         </li>
     );
