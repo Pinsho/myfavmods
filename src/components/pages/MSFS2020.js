@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logomsfs from '../../img/msfs2020.png';
-import Footer from '../../Footer';
+import { MSFSModsGrid } from '../MSFSModsGrid';
+import { MSFSOtherGrid } from '../MSFSOtherGrid';
 
 
 export default class MSFS2020 extends Component{
@@ -15,8 +16,9 @@ export default class MSFS2020 extends Component{
                         <h2>Miscrosoft Flight Simulator 2020</h2>
                     </div>
                 </div>
+                <MSFSModsGrid />
+                <MSFSOtherGrid />
             </div>
-            
         );
     }
 }

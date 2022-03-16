@@ -9,7 +9,7 @@ export function DCSMissionsGrid() {
     const [missions, setMissions] =useState([])
 
     useEffect(() => {
-        base("missions")
+        base("dcsmissions")
         .select({ view: "Grid view" })
         .eachPage((records, fetchNextPage) => {
             setMissions(records)
@@ -19,7 +19,7 @@ export function DCSMissionsGrid() {
 
     return (
         <>
-            <div className={styles.maintitleMissions}>DCS Missions</div>
+            <div className={styles.maintitleMissions}>Missions</div>
             <ul className={styles.grid}>
                 {missions.map((mission) => (
                     <DCSMissionCard key={mission.id} mission={mission} />

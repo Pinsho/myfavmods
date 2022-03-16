@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import logodcs from '../../img/dcs.png';
+import logomsfs from '../../img/msfs2020.png';
 import { Link } from "react-router-dom";
 
 export default class Contact extends Component {
@@ -7,9 +8,13 @@ export default class Contact extends Component {
         return (
             <div className='home'>
                 <p>At the moment, you can try the following categories (more to be added soon)</p>
-                <div class="wrapper">
+                <div className='wrapper'>
                     <Link to="/myfavmods/dcs"><img src={logodcs} height={64} alt="DCS World"/></Link>
                     <span><Link to="/myfavmods/dcs">Digital Combat Simulator World</Link></span>
+                </div>
+                <div className='wrapper'>
+                    <Link to="/myfavmods/msfs2020"><img src={logomsfs} height={64} alt="Microsoft Flight Simulator 2020"/></Link>
+                    <span><Link to="/myfavmods/msfs2020">Microsoft Flight Simulator 2020</Link></span>
                 </div>
             </div>
         )

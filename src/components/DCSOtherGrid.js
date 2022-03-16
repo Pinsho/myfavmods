@@ -9,7 +9,7 @@ export function DCSOtherGrid() {
     const [others, setOther] =useState([])
 
     useEffect(() => {
-        base("other")
+        base("dcsother")
         .select({ view: "Grid view" })
         .eachPage((records, fetchNextPage) => {
             setOther(records)
@@ -19,7 +19,7 @@ export function DCSOtherGrid() {
 
     return (
         <>
-            <div className={styles.maintitleMods}>Other mods</div>
+            <div className={styles.maintitleMods}>Other</div>
             <ul className={styles.grid}>
                 {others.map((other) => (
                     <DCSOtherCard key={other.id} other={other} />

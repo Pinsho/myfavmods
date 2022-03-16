@@ -1,15 +1,15 @@
 import styles from '../css/DCSModsGrid.module.css'
-import { DCSModCard } from './DCSModCard';
+import { MSFSModCard } from './MSFSModCard';
 import Airtable from 'airtable';
 import React, { useEffect, useState } from 'react';
 
 const base = new Airtable({ apiKey: "key03qIMV5bFoWdvj" }).base('appxdFddKFJGA9LAb');
 
-export function DCSModsGrid() {
+export function MSFSModsGrid() {
     const [mods, setMods] =useState([])
 
     useEffect(() => {
-        base("dcsmods")
+        base("msfsmods")
             .select({ view: "Grid view" })
             .eachPage((records, fetchNextPage) => {
                 setMods(records)
@@ -33,10 +33,10 @@ export function DCSModsGrid() {
 
     return (
         <>
-            <div className={styles.maintitleMods}>MODs</div>
+            <div className={styles.maintitleMods}>Addons</div>
             <ul className={styles.grid}>
                 {mods.map((mod) => (
-                    <DCSModCard key={mod.id} mod={mod} />
+                    <MSFSModCard key={mod.id} mod={mod} />
                 ))}
             </ul>
         </>
