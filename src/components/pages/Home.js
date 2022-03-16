@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import logodcs from '../../img/dcs.png';
+import { Link } from "react-router-dom";
 
 export default class Contact extends Component {
     render() {
@@ -8,10 +9,10 @@ export default class Contact extends Component {
                 <h4>At the moment, you can try the following categories (more to be added soon)</h4>
                 <div className='sectionHome'>
                     <div className="imgLogo">
-                        <a href="/myfavmods/dcs"><img src={logodcs} height={64} alt="DCS World"/></a>
+                        <Link to="/myfavmods/dcs"><img src={logodcs} height={64} alt="DCS World"/></Link>
                     </div>
                     <div className='homeTitle'>
-                        <h5><a href="/myfavmods/dcs">Digital Combat Simulator World</a></h5>
+                        <Link to="/myfavmods/dcs"><h5>Digital Combat Simulator World</h5></Link>
                     </div>
                 </div>
                 {/* <div className='homeFooter'>
