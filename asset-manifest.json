@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/myfavmods/static/css/main.9260bd9a.css",
-    "main.js": "/myfavmods/static/js/main.1de09a0f.js",
+    "main.css": "/myfavmods/static/css/main.465b3567.css",
+    "main.js": "/myfavmods/static/js/main.caadbf03.js",
     "index.html": "/myfavmods/index.html",
-    "main.9260bd9a.css.map": "/myfavmods/static/css/main.9260bd9a.css.map",
-    "main.1de09a0f.js.map": "/myfavmods/static/js/main.1de09a0f.js.map"
+    "main.465b3567.css.map": "/myfavmods/static/css/main.465b3567.css.map",
+    "main.caadbf03.js.map": "/myfavmods/static/js/main.caadbf03.js.map"
   },
   "entrypoints": [
-    "static/css/main.9260bd9a.css",
-    "static/js/main.1de09a0f.js"
+    "static/css/main.465b3567.css",
+    "static/js/main.caadbf03.js"
   ]
 }
