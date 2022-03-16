@@ -120,14 +120,14 @@ code {
   padding: 10px 10px;
   justify-content: left;
   background: #212529;
-  margin-right: 15px;
+  margin-right: 10px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .home {
   padding: 0;
-  margin-top: 35px;
-  margin-left: 15px;
+  margin-top: 0;
+  margin-left: 10px;
 }
 
 .header{
@@ -158,7 +158,7 @@ code {
   background: rgb(33,37,41);
   width: 275px;
   font-size: 1.5rem;
-  margin-top: 30px;
+  margin-top: 15px;
   padding: 5px;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
