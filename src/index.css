@@ -159,13 +159,14 @@ code {
   border-top-right-radius: 5px;
   text-align: center;
   color: rgb(206, 206, 206);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .homeSection-tab {
   background: rgb(33,37,41);
-  background: linear-gradient(90deg, rgba(33,37,41,1) 94%, rgba(170,170,170,0) 100%); 
+  background: linear-gradient(90deg, rgba(33,37,41,1) 97%, rgba(170,170,170,0) 100%); 
   height: 3px;
-  width: 290px;
+  width: 286px;
 }
 
 .homeSection a {
