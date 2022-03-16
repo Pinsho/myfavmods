@@ -12,6 +12,11 @@
   height: 100%;
 }
 
+h5 {
+  padding-top: 35px;
+  padding-left: 30px;
+}
+
 html, body {
   height: 100%;
   margin: 0;
@@ -27,6 +32,60 @@ html, body {
   color: white;
 }
 
+.wrapper {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+  padding: 5px;
+}
+
+.wrapper a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.wrapper:hover {
+  background-color: rgba(136, 136, 136, 0.247);
+  border-radius: 5px;
+}
+
+.wrapper:visited {
+  color: #fff;
+}
+
+.wrapper span {
+  margin-left: 10px;
+}
+
+.wrapper img {
+  border-radius: 5px;
+}
+
+.aligned {
+  display: flex;
+  align-items: center;
+}
+
+.block {
+  width: 500px;
+  height: 150px;
+  padding: 30px 5px 5px;
+  margin: 5px 2px;
+  white-space: nowrap;
+  display: inline-block;
+  white-space: normal;
+  vertical-align: middle;
+  text-align:center;
+  
+  color: #FFF;
+}
+
+.helper {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
 .content {
   flex: 1 0 auto;
 }
@@ -37,7 +96,9 @@ code {
 }
 
 .home {
-  padding: 40px;
+  padding: 0;
+  margin-top: 35px;
+  margin-left: 15px;
 }
 
 .header{
@@ -63,29 +124,36 @@ code {
   margin-top: 15px;
 }
 
-.sectionHome {
-  display: flex;
-  margin-left: 20px;
+.homeSection {
+  display: inline-block;
+  white-space: nowrap;
+  font-size: 1rem;
   margin-top: 20px;
   padding: 5px;
   border-radius: 5px;
 }
-.sectionHome:hover {
-  background-color: rgba(136, 136, 136, 0.247);
-}
 
-.sectionHome a {
+.homeSection a {
   text-decoration: none;
   color: #fff;
 }
-.sectionHome:visited {
+.homeSection:visited {
   color: #fff;
 }
 
+.homeImg {
+}
+
+.homeImg img {
+  border-radius: 5px;
+}
+
 .homeTitle {
-  display: flex;
-  margin-left: 20px;
-  margin-top: 23px;
+  text-align: left;
+}
+
+.homeTitle:hover{
+  background-color: rgba(136, 136, 136, 0.247);
 }
 
 .homeFooter {
@@ -95,7 +163,6 @@ code {
 
 .footer {
   flex-shrink: 0;
- 
   height: 35px;
   font-size: 0.8rem;
   text-align: center;
