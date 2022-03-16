@@ -9,7 +9,7 @@ export default class Rfactor2 extends Component{
             <div>
                 <div className='sectionHeader'>
                     <div className="imgLogo">
-                        <a href="/msfs2020"><img src={logomsfs} height={64} alt="rFactor 2"/></a>
+                        <img src={logomsfs} height={64} alt="rFactor 2"/>
                     </div>
                     <div className='sectionTitle'>
                         <h2>rFactor 2</h2>

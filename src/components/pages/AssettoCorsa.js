@@ -9,7 +9,7 @@ export default class AssettoCorsa extends Component{
             <div>
                 <div className='sectionHeader'>
                     <div className="imgLogo">
-                        <a href="/msfs2020"><img src={logomsfs} height={64} alt="Assetto Corsa"/></a>
+                        <img src={logomsfs} height={64} alt="Assetto Corsa"/>
                     </div>
                     <div className='sectionTitle'>
                         <h2>Assetto Corsa</h2>

@@ -11,7 +11,7 @@ export default class DCS extends Component{
             <div>
                 <div className='sectionHeader'>
                     <div className="imgLogo">
-                        <a href="/dcs"><img src={logodcs} height={64} alt="DCS World"/></a>
+                        <img src={logodcs} height={64} alt="DCS World"/>
                     </div>
                     <div className='sectionTitle'>
                         <h2>Digital Combat Simulator World</h2>
