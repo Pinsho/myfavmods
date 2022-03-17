@@ -2,7 +2,7 @@
 
 This is my list of free content mods, addons and other stuff for different games and apps. Enjoy it!
 
-## https://pinsho.github.io/myfavmods/
+## [https://pinsho.github.io/myfavmods/]
 
 <!--This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
