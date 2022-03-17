@@ -40,6 +40,11 @@ html, body {
   width: auto;
 }
 
+.title {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
 .ow {
   white-space: nowrap;
   overflow: hidden;

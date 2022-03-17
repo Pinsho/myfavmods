@@ -12,7 +12,7 @@ export default class AssettoCorsa extends Component{
                 <div className='sectionHeader'>
                     <div className='wrapper'>
                         <img src={logoac} height={64} alt="Assetto Corsa"/>
-                        <span className='long'><h3>Assetto Corsa</h3></span>
+                        <span className='long title'>Assetto Corsa</span>
                     </div>
                 </div>
                 <ACCarsGrid/>
