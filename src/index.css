@@ -59,11 +59,15 @@ html, body {
   text-decoration: none;
   color: #fff;
 }
+.wrapper a:hover {
+  text-decoration: none;
+  color: rgb(187, 187, 187);
+}
 
-.wrapper:hover {
+/* .wrapper:hover {
   background-color: rgba(136, 136, 136, 0.247);
   border-radius: 5px;
-}
+} */
 
 .wrapper:visited {
   color: #fff;

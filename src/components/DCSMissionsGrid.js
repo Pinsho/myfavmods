@@ -1,4 +1,4 @@
-import styles from '../css/DCSModsGrid.module.css';
+import styles from '../css/Grid.module.css';
 import { DCSMissionCard } from './DCSMissionCard';
 import Airtable from 'airtable';
 import React, { useEffect, useState } from 'react';
