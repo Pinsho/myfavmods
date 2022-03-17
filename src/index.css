@@ -38,6 +38,7 @@ html, body {
   margin-right: 15px;
   padding: 10px;
   width: auto;
+  font-size: 0.94rem;
 }
 
 .title {
@@ -121,7 +122,7 @@ code {
   position: relative;
   display: grid;
   max-width: 100%;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(345px, 1fr));
   gap: 5px;
   padding: 10px 10px;
   justify-content: left;
@@ -191,9 +192,6 @@ code {
 .homeSection i {
   font-size: 1.5rem !important;
   margin-right: 10px;
-}
-
-.homeImg {
 }
 
 .homeImg img {
@@ -295,13 +293,19 @@ code {
   height: 40px;
   bottom: 20px;
   right: 20px;
-  font-size: 25px;
-  background: rgba(153, 153, 153, 0.31);
+  background: rgba(153, 153, 153, 0.411);
   color: rgba(255, 255, 255, 0.192);
   cursor: pointer;
   border-radius: 5px;
   border: none;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.back-to-top i {
+  text-align: center;
+  font-size: 2rem;
+  margin-right: 5px;
+  z-index: 1;
 }
 
 .back-to-top:hover {

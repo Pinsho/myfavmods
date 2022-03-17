@@ -31,7 +31,7 @@ export default function App() {
       <main>
         {showButton && (
           <button onClick={scrollToTop} className="back-to-top">
-            &#8679;
+            <i className='bx bx-chevrons-up'></i>
           </button>
         )}
       </main>

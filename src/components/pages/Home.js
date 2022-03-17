@@ -17,7 +17,7 @@ export default class Contact extends Component {
                     </div>
                     <div className='wrapper'>
                         <Link to="/myfavmods/msfs2020"><img src={logomsfs} height={64} alt="Microsoft Flight Simulator 2020"/></Link>
-                        <span className='long'><Link to="/myfavmods/msfs2020">Microsoft Flight Simulator 2020</Link></span>
+                        <span className='long'><Link to="/myfavmods/msfs2020">Microsoft Flight Simulator</Link></span>
                     </div>
                 </ul>
                 
