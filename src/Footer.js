@@ -5,7 +5,7 @@ export default class Contact extends Component {
         return (
             <div className='footer'>
                 <div className='footerText'>
-                    <span>© 2022 <i className='bx bxl-github' ></i> myfavmods by Pinsho </span>
+                    <span>Copyright © 2022 <i className='bx bxl-github' ></i> myfavmods by Pinsho </span>
                     <span className='socials'>
                         <a href="https://instagram.com/pinsho" target="_blank" rel="noreferrer">
                             <i className='bx bxl-instagram instagram'></i>

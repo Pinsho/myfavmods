@@ -9,11 +9,9 @@ export default class MSFS2020 extends Component{
         return (
             <div>
                 <div className='sectionHeader'>
-                    <div className="imgLogo">
-                        <img src={logomsfs} height={64} alt="Miscrosoft Flight Simulator 2020" />
-                    </div>
-                    <div className='sectionTitle'>
-                        <h2>Miscrosoft Flight Simulator 2020</h2>
+                    <div className='wrapper'>
+                        <img src={logomsfs} height={64} alt="Miscrosoft Flight Simulator 2020"/>
+                        <span className='long'><h3>Miscrosoft Flight Simulator 2020</h3></span>
                     </div>
                 </div>
                 <MSFSModsGrid />

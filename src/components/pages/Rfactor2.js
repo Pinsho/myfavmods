@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import logomsfs from '../../img/rfactor2.png';
-import Footer from '../../Footer';
+import logorf2 from '../../img/rfactor2.png';
 
 
 export default class Rfactor2 extends Component{
@@ -8,15 +7,12 @@ export default class Rfactor2 extends Component{
         return (
             <div>
                 <div className='sectionHeader'>
-                    <div className="imgLogo">
-                        <img src={logomsfs} height={64} alt="rFactor 2"/>
-                    </div>
-                    <div className='sectionTitle'>
-                        <h2>rFactor 2</h2>
+                    <div className='wrapper'>
+                        <img src={logorf2} height={64} alt="rFactor 2"/>
+                        <span className='long'><h3>rFactor 2</h3></span>
                     </div>
                 </div>
             </div>
-            
         );
     }
 }
