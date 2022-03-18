@@ -21,8 +21,6 @@ export function DCSModsGrid() {
             .eachPage((records, fetchNextPage) => {
                 setMods(records)
                 fetchNextPage();
-                console.clear();
-                console.log(records);
             })
         /* base("missions")
         .select({ view: "Grid view" })
