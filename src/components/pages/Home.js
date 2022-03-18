@@ -4,7 +4,7 @@ import logomsfs from '../../img/msfs2020.png';
 import logoac from '../../img/ac.png';
 import { Link } from "react-router-dom";
 
-export default class Contact extends Component {
+export default class Home extends Component {
     render() {
         return (
             <div className='home'>
