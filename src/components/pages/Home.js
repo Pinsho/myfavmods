@@ -8,7 +8,7 @@ export default class Contact extends Component {
     render() {
         return (
             <div className='home'>
-                <div className='homeSection'><i className='bx bxs-plane-alt'></i>Flight Simulation</div>
+                <div className='homeSection'><i className='bx bxs-plane-alt'></i>FLIGHT SIMULATION</div>
                 {/* <div className='homeSection-tab'></div> */}
                 <ul className='homeGrid'>
                     <div className='wrapper'>
@@ -21,7 +21,7 @@ export default class Contact extends Component {
                     </div>
                 </ul>
                 
-                <div className='homeSection'><i className='bx bxs-car' ></i>Motor Simulation</div>
+                <div className='homeSection'><i className='bx bxs-car' ></i>MOTOR SIMULATION</div>
                 {/* <div className='homeSection-tab'></div> */}
                 <ul className='homeGrid'>
                     <div className='wrapper'>
