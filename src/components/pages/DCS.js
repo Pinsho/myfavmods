@@ -3,7 +3,6 @@ import { DCSModsGrid } from "../DCSModsGrid";
 import { DCSMissionsGrid } from "../DCSMissionsGrid";
 import { DCSOtherGrid } from "../DCSOtherGrid";
 import logodcs from '../../img/dcs.png';
-import { DCSFilters } from '../DCSFilters';
 
 export default class DCS extends Component{
     render() {
