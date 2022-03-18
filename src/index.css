@@ -124,9 +124,8 @@ code {
 }
 
 .category {
-  margin: 0;
-  /* display: grid; */
-  justify-content: center;
+  margin: auto;
+  max-width: 960px;
 }
 
 .homeGrid {
