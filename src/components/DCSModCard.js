@@ -9,7 +9,7 @@ export const DCSModCard = ({ mod }) => {
             <div className={styles.info}><a href={mod.fields.Info} target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faCircleInfo}/></a></div>
             <div className={styles.cardBody}>
                 <div className={styles.title}>{mod.fields.Name}</div>
-                <div className={styles.type}><i className='bx bxs-bookmark' ></i>{mod.fields.Type}</div>
+                <div className={styles.type}><i className='bx bxs-bookmark' ></i>{mod.fields.TypeName}</div>
                 <div><a href={mod.fields.URL} target="_blank" rel="noreferrer" className={styles.downloadButton}>Download</a></div>
             </div>
         </li>

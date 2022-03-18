@@ -1,7 +1,7 @@
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, 300px);
-    gap: 40px;
+    gap: 10px;
     padding: 10px 40px;
     justify-content: center;
 }
@@ -27,4 +27,16 @@
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.filter {
+    position: relative;
+    float: right;
+    padding: 10px;
+}
+.filter select {
+    margin-left: 5px;
+} 
+.filter label {
+    font-size: 0.8rem;
 }

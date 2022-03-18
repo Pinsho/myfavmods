@@ -1,4 +1,4 @@
-import styles from '../css/Grid.module.css'
+import styles from '../css/Grid.module.css';
 import { ACCarCard } from './ACCarCard';
 import Airtable from 'airtable';
 import React, { useEffect, useState } from 'react';

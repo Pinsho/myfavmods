@@ -10,7 +10,6 @@ import {
 import Home from './pages/Home';
 import DCS from './pages/DCS';
 import MSFS2020 from './pages/MSFS2020';
-import Rfactor2 from './pages/Rfactor2';
 import AssettoCorsa from './pages/AssettoCorsa';
 
 export default class NavbarComp extends Component {

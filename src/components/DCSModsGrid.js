@@ -1,4 +1,4 @@
-import styles from '../css/Grid.module.css'
+import styles from '../css/Grid.module.css';
 import { DCSModCard } from './DCSModCard';
 import Airtable from 'airtable';
 import React, { useEffect, useState } from 'react';
@@ -21,6 +21,8 @@ export function DCSModsGrid() {
             .eachPage((records, fetchNextPage) => {
                 setMods(records)
                 fetchNextPage();
+                console.clear();
+                console.log(records);
             })
         /* base("missions")
         .select({ view: "Grid view" })
@@ -41,11 +43,14 @@ export function DCSModsGrid() {
     return (
         <>
             <div className={styles.maintitleMods}>MODs</div>
-            <ul className={styles.grid}>
-                {mods.map((mod) => (
-                    <DCSModCard key={mod.id} mod={mod} />
-                ))}
-            </ul>
+            <div>
+                <ul className={styles.grid}>
+                    {mods.map((mod) => (
+                        <DCSModCard key={mod.id} mod={mod} />
+                    ))}
+                </ul>
+            </div>
+            
         </>
     );
 }

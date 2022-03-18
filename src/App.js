@@ -25,10 +25,9 @@ export default function App() {
 
   return (
     <div className='content'> 
-      <header>
-          <NavbarComp />
-      </header>
+      <header></header>
       <main>
+        <NavbarComp />
         {showButton && (
           <button onClick={scrollToTop} className="back-to-top">
             <i className='bx bx-chevrons-up'></i>
