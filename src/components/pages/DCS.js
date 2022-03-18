@@ -15,7 +15,6 @@ export default class DCS extends Component{
                         <span className='long title'>Digital Combat Simulator World</span>
                     </div>
                 </div>
-                <DCSFilters />
                 <DCSModsGrid />
                 <DCSMissionsGrid /> 
                 <DCSOtherGrid />
