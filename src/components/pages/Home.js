@@ -9,7 +9,7 @@ export default class Home extends Component {
         return (
             <div className='home'>
                 <div className='category'>
-                    <div className='gridContainer'>
+                    <div className='categoryContainer'>
                         <div className='homeSection'><i className='bx bxs-plane-alt'></i><span>FLIGHT SIM GAMES</span></div>
                         <ul className='homeGrid'>
                             <div className='wrapper'>
@@ -22,7 +22,7 @@ export default class Home extends Component {
                             </div>
                         </ul>
                     </div>
-                    <div className='gridContainer'>
+                    <div className='categoryContainer'>
                         <div className='homeSection'><i className='bx bxs-car' ></i><span>MOTOR SIM GAMES</span></div>
                         <ul className='homeGrid'>
                             <div className='wrapper'>

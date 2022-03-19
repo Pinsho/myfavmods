@@ -1,4 +1,4 @@
-import styles from '../css/ACCarCard.module.css';
+import styles from '../css/Card.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleInfo } from '@fortawesome/free-solid-svg-icons';
 
@@ -11,7 +11,7 @@ export const ACTrackCard = ({ track }) => {
                 <div className={styles.title}>{track.fields.Name}</div>
                 <div className={styles.type}><i className='bx bxs-map' ></i>Location: <div className={styles.right}>{track.fields.Location}</div></div>
                 <div className={styles.type}><i className='bx bxs-ruler' ></i>Length: <div className={styles.right}>{track.fields.Length}</div></div>
-                <div><a href={track.fields.URL} target="_blank" rel="noreferrer" className={styles.downloadButton}>Download</a></div>
+                <div><a href={track.fields.URL} target="_blank" rel="noreferrer" className={styles.downloadButtonAC}>Download</a></div>
             </div>
         </li>
     );

@@ -1,4 +1,4 @@
-import styles from '../css/MSFSModCard.module.css';
+import styles from '../css/Card.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleInfo } from '@fortawesome/free-solid-svg-icons';
 
@@ -12,7 +12,7 @@ export const MSFSModCard = ({ mod }) => {
                 <div className={styles.type}><i className='bx bxs-bookmark' ></i>Category: <div className={styles.right}>{mod.fields.TypeName}</div></div>
                 <div className={styles.type}><i className='bx bxs-wrench' ></i>Manufacturer: <div className={styles.right}>{mod.fields.Manufacturer}</div></div>
                 <div className={styles.type}><i className='bx bxs-user' ></i>Developer: <div className={styles.right}>{mod.fields.Developer}</div></div>
-                <div className='dwnButton'><a href={mod.fields.URL} target="_blank" rel="noreferrer" className={styles.downloadButton}>Download</a></div>
+                <div className='dwnButton'><a href={mod.fields.URL} target="_blank" rel="noreferrer" className={styles.downloadButtonMSFS}>Download</a></div>
             </div>
         </li>
     );
