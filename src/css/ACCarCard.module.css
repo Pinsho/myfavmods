@@ -1,111 +1,116 @@
-
-
+.right {
+  position: relative;
+  float: right;
+  margin-right: 5px;
+}
 
 .modCard {
-    list-style: none;
-    background-clip: border-box;
-    background-color: grey;
-    border: 1px solid rgba(0,0,0,.125);
-    border-radius: .25rem;
-    word-wrap: break-word;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  list-style: none;
+  background-clip: border-box;
+  background-color: grey;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  word-wrap: break-word;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .modImage {
-    border-top-left-radius: calc(.25rem - 1px);
-    border-top-right-radius: calc(.25rem - 1px);
-    background-color: azure;
-    width: 100%;
-    margin-bottom: -4px;
+  border-top-left-radius: calc(0.25rem - 1px);
+  border-top-right-radius: calc(0.25rem - 1px);
+  background-color: azure;
+  width: 100%;
+  margin-bottom: -4px;
 }
 
 .cardBody {
-    background-color: grey;
-    padding: .8rem;
+  background-color: grey;
+  padding: 0.8rem;
 }
 
 .cardBody a:hover {
-    background-color: #b11b31;
-    border-color: #961529;
+  background-color: #b11b31;
+  border-color: #961529;
 }
 
 .cardBody a {
-    color: #fff !important;
-    text-decoration: none;
-} 
+  color: #fff !important;
+  text-decoration: none;
+}
 
 .cardBody a:visited {
-    color: #fff !important;
+  color: #fff !important;
 }
 
 .cardBody a:active {
-    color: #212529 !important;
+  color: #212529 !important;
 }
 
 .title {
-    font-size: .9rem;
-    font-weight: 600;
-    margin-top: -5px;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: -5px;
 }
 
 .type {
-    font-size: 0.8rem;
-    margin-bottom: 0;
-    line-height: 0.8rem;
-    margin-top: 4px;
+  font-size: 0.8rem;
+  margin-bottom: 0;
+  line-height: 0.8rem;
+  margin-top: 4px;
 }
 
 .downloadButton {
-    margin-top: 10px;
-    background-color: #C21D37;
-    border-color: #a1192d;
-    width: 100%;
-    border: 1px solid transparent;
-    border-top-color: transparent;
-    border-right-color: transparent;
-    border-bottom-color: transparent;
-    border-left-color: transparent;
-    border-radius: .25rem;
-    cursor: pointer;
-    display: inline-block;
-    font-size: 1rem;
-    font-weight: 600;
-    line-height: 1.5;
-    padding: .375rem .75rem;
-    text-align: center;
-    text-decoration: none;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    vertical-align: middle;
+  margin-top: 10px;
+  background-color: #c21d37;
+  border-color: #a1192d;
+  width: 100%;
+  border: 1px solid transparent;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5;
+  padding: 0.375rem 0.75rem;
+  text-align: center;
+  text-decoration: none;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  vertical-align: middle;
 }
 
 .downloadButton:hover {
-    background-color: #0379ac;
-    border-color: #026792;
+  background-color: #0379ac;
+  border-color: #026792;
 }
 
 .info {
-    position: relative;
-    float: right;
-    top: -24px;
-    margin-right: 0;
-    background-color: rgba(24, 24, 24, 0.164);
-    padding: 2px 4px;
-    border-top-left-radius: calc(.25rem - 1px);
-  }
+  position: relative;
+  float: right;
+  top: -24px;
+  margin-right: 0;
+  background-color: rgba(24, 24, 24, 0.164);
+  padding: 2px 4px;
+  border-top-left-radius: calc(0.25rem - 1px);
+}
 
-  .info:hover {
-    background-color: grey;
-    transition: color .10s ease-in-out,background-color .10s ease-in-out,border-color .10s ease-in-out,box-shadow .10s ease-in-out;
-  }
+.info:hover {
+  background-color: grey;
+  transition: color 0.1s ease-in-out, background-color 0.1s ease-in-out,
+    border-color 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+}
 
-  .info a {
-    color: #fff;
-    text-decoration: none;
-} 
+.info a {
+  color: #fff;
+  text-decoration: none;
+}
 
 .info a:visited {
-    color: #fff;
+  color: #fff;
 }

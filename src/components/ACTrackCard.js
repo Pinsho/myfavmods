@@ -9,8 +9,8 @@ export const ACTrackCard = ({ track }) => {
             <div className={styles.info}><a href={track.fields.Info} target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faCircleInfo}/></a></div>
             <div className={styles.cardBody}>
                 <div className={styles.title}>{track.fields.Name}</div>
-                <div className={styles.type}><i className='bx bxs-map' ></i>{track.fields.Location}</div>
-                <div className={styles.type}><i className='bx bxs-ruler' ></i>{track.fields.Length}</div>
+                <div className={styles.type}><i className='bx bxs-map' ></i>Location: <div className={styles.right}>{track.fields.Location}</div></div>
+                <div className={styles.type}><i className='bx bxs-ruler' ></i>Length: <div className={styles.right}>{track.fields.Length}</div></div>
                 <div><a href={track.fields.URL} target="_blank" rel="noreferrer" className={styles.downloadButton}>Download</a></div>
             </div>
         </li>
