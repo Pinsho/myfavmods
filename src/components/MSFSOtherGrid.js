@@ -40,7 +40,7 @@ export function MSFSOtherGrid() {
 
     return (
         <>
-            <div className={styles.maintitleMods}>Other</div>
+            <div className={styles.maintitleMods} id="other">Other</div>
             <ul className={styles.grid}>
                 {others.map((other) => (
                     <MSFSOtherCard key={other.id} other={other} />

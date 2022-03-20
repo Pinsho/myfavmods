@@ -26,7 +26,7 @@ export function DCSMissionsGrid() {
 
     return (
         <>
-            <div className={styles.maintitleMissions}>Missions</div>
+            <div className={styles.maintitleMissions} id="missions">Missions</div>
             <ul className={styles.grid}>
                 {missions.map((mission) => (
                     <DCSMissionCard key={mission.id} mission={mission} />

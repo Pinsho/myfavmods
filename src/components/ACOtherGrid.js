@@ -26,7 +26,7 @@ export function ACOtherGrid() {
 
     return (
         <>
-            <div className={styles.maintitleMods}>Other</div>
+            <div className={styles.maintitleMods} id="other">Other</div>
             <ul className={styles.grid}>
                 {others.map((other) => (
                     <ACOtherCard key={other.id} other={other} />

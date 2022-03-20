@@ -41,7 +41,7 @@ export function DCSModsGrid() {
 
     return (
         <>
-            <div className={styles.maintitleMods}>MODs</div>
+            <div className={styles.maintitleMods} id="mods">MODs</div>
             <div>
                 <ul className={styles.grid}>
                     {mods.map((mod) => (

@@ -26,7 +26,7 @@ export function ACTracksGrid() {
 
     return (
         <>
-            <div className={styles.maintitleMods}>Tracks</div>
+            <div className={styles.maintitleMods} id="tracks">Tracks</div>
             <ul className={styles.grid}>
                 {tracks.map((track) => (
                     <ACTrackCard key={track.id} track={track} />

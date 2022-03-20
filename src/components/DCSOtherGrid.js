@@ -26,7 +26,7 @@ export function DCSOtherGrid() {
 
     return (
         <>
-            <div className={styles.maintitleMods}>Other</div>
+            <div className={styles.maintitleMods} id="other">Other</div>
             <ul className={styles.grid}>
                 {others.map((other) => (
                     <DCSOtherCard key={other.id} other={other} />

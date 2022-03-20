@@ -40,7 +40,7 @@ export function MSFSModsGrid() {
 
     return (
         <>
-            <div className={styles.maintitleMods}>Addons</div>
+            <div className={styles.maintitleMods} id="addons">Addons</div>
             <ul className={styles.grid}>
                 {mods.map((mod) => (
                     <MSFSModCard key={mod.id} mod={mod} />

@@ -9,9 +9,16 @@ export default class DCS extends Component{
         return (
             <div>
                 <div className='sectionHeader'>
-                    <div className='wrapperCategory'>
+                    <div className='wrapper'>
                         <img src={logodcs} height={64} alt="DCS World"/>
                         <span className='long title'>Digital Combat Simulator World</span>
+                    </div>
+                    <div id="linksContainer">
+                        <div className='links'>
+                            <span><a href="#mods">Mods</a></span>
+                            <span><a href="#missions">Missions</a></span>
+                            <span><a href="#other">Other</a></span>
+                        </div>
                     </div>
                 </div>
                 <DCSModsGrid />

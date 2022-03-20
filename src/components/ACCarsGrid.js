@@ -40,7 +40,7 @@ export function ACCarsGrid() {
 
     return (
         <>
-            <div className={styles.maintitleMods}>Cars</div>
+            <div className={styles.maintitleMods} id="cars">Cars</div>
             <ul className={styles.grid}>
                 {cars.map((car) => (
                     <ACCarCard key={car.id} car={car} />
