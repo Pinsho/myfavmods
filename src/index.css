@@ -56,11 +56,16 @@ html, body {
   max-width: 100%;
 }
 
-.wrapper img {
+.wrapperCategory img {
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
   border-radius: 5px;
   margin-top: 5px;
   margin-left: 5px;
+}
+
+.wrapper img {
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  border-radius: 5px;
 }
 
 .wrapper a {

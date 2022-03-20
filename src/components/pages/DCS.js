@@ -9,7 +9,7 @@ export default class DCS extends Component{
         return (
             <div>
                 <div className='sectionHeader'>
-                    <div className='wrapper'>
+                    <div className='wrapperCategory'>
                         <img src={logodcs} height={64} alt="DCS World"/>
                         <span className='long title'>Digital Combat Simulator World</span>
                     </div>
