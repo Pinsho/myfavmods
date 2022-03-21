@@ -187,8 +187,8 @@
 
 .downloadButtonMusic {
   margin-top: 10px;
-  background-color: #4c4ddb;
-  border-color: #4747c7;
+  background-color: #f3722c;
+  border-color: #ca5f25;
   width: 100%;
   border: 1px solid transparent;
   border-top-color: transparent;
@@ -213,8 +213,8 @@
 }
 
 .downloadButtonMusic:hover {
-  background-color: #3b3bb9;
-  border-color: #3535a7;
+  background-color: #c05a24;
+  border-color: #a85021;
 }
 
 .info {
