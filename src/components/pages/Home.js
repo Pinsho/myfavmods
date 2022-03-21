@@ -14,11 +14,11 @@ export default class Home extends Component {
                         <ul className='homeGrid'>
                             <div className='wrapper'>
                                 <Link to="/dcs"><img src={logodcs} height={64} alt="DCS World"/></Link>
-                                <span className='long'><Link to="/myfavmods/dcs">Digital Combat Simulator World</Link></span>
+                                <span className='long'><Link to="/dcs">Digital Combat Simulator World</Link></span>
                             </div>
                             <div className='wrapper'>
                                 <Link to="/msfs2020"><img src={logomsfs} height={64} alt="Microsoft Flight Simulator 2020"/></Link>
-                                <span className='long'><Link to="/myfavmods/msfs2020">Microsoft Flight Simulator</Link></span>
+                                <span className='long'><Link to="/msfs2020">Microsoft Flight Simulator</Link></span>
                             </div>
                         </ul>
                     </div>
@@ -27,7 +27,7 @@ export default class Home extends Component {
                         <ul className='homeGrid'>
                             <div className='wrapper'>
                                 <Link to="/assettocorsa"><img src={logoac} height={64} alt="Assetto Corsa"/></Link>
-                                <span className='long'><Link to="/myfavmods/assettocorsa">Assetto Corsa</Link></span>
+                                <span className='long'><Link to="/assettocorsa">Assetto Corsa</Link></span>
                             </div>
                         </ul>
                     </div>
