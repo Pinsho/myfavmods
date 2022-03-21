@@ -13,11 +13,11 @@ export default class Home extends Component {
                         <div className='homeSection'><i className='bx bxs-plane-alt'></i><span>FLIGHT SIM GAMES</span></div>
                         <ul className='homeGrid'>
                             <div className='wrapper'>
-                                <Link to="/myfavmods/dcs"><img src={logodcs} height={64} alt="DCS World"/></Link>
+                                <Link to="/dcs"><img src={logodcs} height={64} alt="DCS World"/></Link>
                                 <span className='long'><Link to="/myfavmods/dcs">Digital Combat Simulator World</Link></span>
                             </div>
                             <div className='wrapper'>
-                                <Link to="/myfavmods/msfs2020"><img src={logomsfs} height={64} alt="Microsoft Flight Simulator 2020"/></Link>
+                                <Link to="/msfs2020"><img src={logomsfs} height={64} alt="Microsoft Flight Simulator 2020"/></Link>
                                 <span className='long'><Link to="/myfavmods/msfs2020">Microsoft Flight Simulator</Link></span>
                             </div>
                         </ul>
@@ -26,7 +26,7 @@ export default class Home extends Component {
                         <div className='homeSection'><i className='bx bxs-car' ></i><span>MOTOR SIM GAMES</span></div>
                         <ul className='homeGrid'>
                             <div className='wrapper'>
-                                <Link to="/myfavmods/assettocorsa"><img src={logoac} height={64} alt="Assetto Corsa"/></Link>
+                                <Link to="/assettocorsa"><img src={logoac} height={64} alt="Assetto Corsa"/></Link>
                                 <span className='long'><Link to="/myfavmods/assettocorsa">Assetto Corsa</Link></span>
                             </div>
                         </ul>
