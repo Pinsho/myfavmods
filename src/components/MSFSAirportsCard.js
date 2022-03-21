@@ -8,7 +8,7 @@ export const MSFSAirportsCard = ({ airport }) => {
             <div className={styles.cardBody}>
                 <div className={styles.title}>{airport.fields.Name}</div>
                 <div className={styles.type}><i className='bx bxs-info-circle'></i>OACI: <div className={styles.right}>{airport.fields.OACI}</div></div>
-                <div className={styles.type}><i className='bx bxs-bookmark' ></i>Type: <div className={styles.right}>{airport.fields.TypeName}</div></div>
+                <div className={styles.type}><i className='bx bxs-bookmark' ></i>Category: <div className={styles.right}>{airport.fields.TypeName}</div></div>
                 <div className={styles.type}><i className='bx bxs-map' ></i>Location: <div className={styles.right}>{airport.fields.Location}</div></div>
                 <div className='dwnButton'><a href={airport.fields.URL} target="_blank" rel="noreferrer" className={styles.downloadButtonMSFS}>Download</a></div>
             </div>
