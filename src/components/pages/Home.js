@@ -2,6 +2,10 @@ import React, { Component } from 'react';
 import logodcs from '../../img/dcs.png';
 import logomsfs from '../../img/msfs2020.png';
 import logoac from '../../img/ac.png';
+import logorf2 from '../../img/rfactor2.png';
+import logodaw from '../../img/daw.png';
+import logovst from '../../img/vst.png';
+import logosamples from '../../img/samples.png';
 import { Link } from "react-router-dom";
 
 export default class Home extends Component {
@@ -29,8 +33,29 @@ export default class Home extends Component {
                                 <Link to="/assettocorsa"><img src={logoac} height={64} alt="Assetto Corsa"/></Link>
                                 <span className='long'><Link to="/assettocorsa">Assetto Corsa</Link></span>
                             </div>
+                            <div className='wrapper'>
+                                <Link to="/rfactor2"><img src={logorf2} height={64} alt="rFactor 2"/></Link>
+                                <span className='long'><Link to="/rfactor2">rFactor 2</Link></span>
+                            </div>
                         </ul>
                     </div>
+                    {/* <div className='categoryContainer'>
+                        <div className='homeSection'><i className='bx bxs-music' ></i><span>MUSIC PRODUCTION</span></div>
+                        <ul className='homeGrid'>
+                            <div className='wrapper'>
+                                <Link to="/daw"><img src={logodaw} height={64} alt="DAWs"/></Link>
+                                <span className='long'><Link to="/daw">DAWs</Link></span>
+                            </div>
+                            <div className='wrapper'>
+                                <Link to="/vst"><img src={logovst} height={64} alt="VSTs"/></Link>
+                                <span className='long'><Link to="/vst">VSTs</Link></span>
+                            </div>
+                            <div className='wrapper'>
+                                <Link to="/samples"><img src={logosamples} height={64} alt="Samples"/></Link>
+                                <span className='long'><Link to="/samples">Samples</Link></span>
+                            </div>
+                        </ul>
+                    </div> */}
                 </div>
             </div>
         )
