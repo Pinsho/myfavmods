@@ -10,7 +10,7 @@ export default class Home extends Component {
             <div className='home'>
                 <div className='category'>
                     <div className='categoryContainer'>
-                        <div className='homeSection'><i className='bx bxs-plane-alt'></i><span>FLIGHT SIM GAMES</span></div>
+                        <div className='homeSection'><i className='bx bxs-plane-alt'></i><span>FLIGHT SIMULATION</span></div>
                         <ul className='homeGrid'>
                             <div className='wrapper'>
                                 <Link to="/dcs"><img src={logodcs} height={64} alt="DCS World"/></Link>
@@ -23,7 +23,7 @@ export default class Home extends Component {
                         </ul>
                     </div>
                     <div className='categoryContainer'>
-                        <div className='homeSection'><i className='bx bxs-car' ></i><span>MOTOR SIM GAMES</span></div>
+                        <div className='homeSection'><i className='bx bxs-car' ></i><span>MOTOR SIMULATION</span></div>
                         <ul className='homeGrid'>
                             <div className='wrapper'>
                                 <Link to="/assettocorsa"><img src={logoac} height={64} alt="Assetto Corsa"/></Link>
