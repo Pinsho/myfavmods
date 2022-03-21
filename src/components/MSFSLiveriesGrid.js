@@ -1,15 +1,15 @@
 import styles from '../css/Grid.module.css'
-import { ACOtherCard } from './ACOtherCard';
+import { MSFSLiveriesCard } from './MSFSLiveriesCard';
 import Airtable from 'airtable';
 import React, { useEffect, useState } from 'react';
 
 const base = new Airtable({ apiKey: "key03qIMV5bFoWdvj" }).base('appxdFddKFJGA9LAb');
 
-export function ACOtherGrid() {
-    const [others, setOthers] =useState([])
+export function MSFSLiveriesGrid() {
+    const [liveries, setLiveries] =useState([])
 
     useEffect(() => {
-        base("acother")
+        base("msfsliveries")
         .select({ 
             view: "Grid view",
             sort:[
@@ -19,17 +19,17 @@ export function ACOtherGrid() {
             ],
         })
             .eachPage((records, fetchNextPage) => {
-                setOthers(records)
+                setLiveries(records)
                 fetchNextPage();
             })
     }, []);
 
     return (
         <>
-            <div className={styles.maintitleMods} id="other">Other</div>
+            <div className={styles.maintitleMods} id="liveries">Liveries</div>
             <ul className={styles.grid}>
-                {others.map((other) => (
-                    <ACOtherCard key={other.id} other={other} />
+                {liveries.map((livery) => (
+                    <MSFSLiveriesCard key={livery.id} livery={livery} />
                 ))}
             </ul>
         </>

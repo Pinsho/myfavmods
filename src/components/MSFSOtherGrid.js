@@ -6,7 +6,7 @@ import React, { useEffect, useState } from 'react';
 const base = new Airtable({ apiKey: "key03qIMV5bFoWdvj" }).base('appxdFddKFJGA9LAb');
 
 export function MSFSOtherGrid() {
-    const [others, setMods] =useState([])
+    const [others, setOthers] =useState([])
 
     useEffect(() => {
         base("msfsother")
@@ -19,7 +19,7 @@ export function MSFSOtherGrid() {
             ],
         })
             .eachPage((records, fetchNextPage) => {
-                setMods(records)
+                setOthers(records)
                 fetchNextPage();
             })
         /* base("missions")

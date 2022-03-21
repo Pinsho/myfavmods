@@ -6,7 +6,7 @@ import React, { useEffect, useState } from 'react';
 const base = new Airtable({ apiKey: "key03qIMV5bFoWdvj" }).base('appxdFddKFJGA9LAb');
 
 export function ACTracksGrid() {
-    const [tracks, setMods] =useState([])
+    const [tracks, setTracks] =useState([])
 
     useEffect(() => {
         base("actracks")
@@ -19,7 +19,7 @@ export function ACTracksGrid() {
             ],
         })
             .eachPage((records, fetchNextPage) => {
-                setMods(records)
+                setTracks(records)
                 fetchNextPage();
             })
     }, []);

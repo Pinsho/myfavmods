@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import logomsfs from '../../img/msfs2020.png';
 import { MSFSModsGrid } from '../MSFSModsGrid';
+import { MSFSLiveriesGrid } from '../MSFSLiveriesGrid';
+import { MSFSAirportsGrid } from '../MSFSAirportsGrid';
 import { MSFSOtherGrid } from '../MSFSOtherGrid';
 
 
@@ -16,11 +18,15 @@ export default class MSFS2020 extends Component{
                     <div id="linksContainer">
                         <div className='links'>
                             <span><a href="#addons">Addons</a></span>
+                            <span><a href="#airports">Airports</a></span>
+                            <span><a href="#liveries">Liveries</a></span>
                             <span><a href="#other">Other</a></span>
                         </div>
                     </div>
                 </div>
                 <MSFSModsGrid />
+                <MSFSAirportsGrid />
+                <MSFSLiveriesGrid />
                 <MSFSOtherGrid />
             </div>
         );

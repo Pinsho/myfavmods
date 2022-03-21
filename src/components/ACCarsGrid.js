@@ -6,7 +6,7 @@ import React, { useEffect, useState } from 'react';
 const base = new Airtable({ apiKey: "key03qIMV5bFoWdvj" }).base('appxdFddKFJGA9LAb');
 
 export function ACCarsGrid() {
-    const [cars, setMods] =useState([])
+    const [cars, setCars] =useState([])
 
     useEffect(() => {
         base("accars")
@@ -19,7 +19,7 @@ export function ACCarsGrid() {
             ],
         })
             .eachPage((records, fetchNextPage) => {
-                setMods(records)
+                setCars(records)
                 fetchNextPage();
             })
         /* base("missions")

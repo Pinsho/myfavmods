@@ -1,15 +1,15 @@
 import styles from '../css/Grid.module.css'
-import { ACOtherCard } from './ACOtherCard';
+import { MSFSAirportsCard } from './MSFSAirportsCard';
 import Airtable from 'airtable';
 import React, { useEffect, useState } from 'react';
 
 const base = new Airtable({ apiKey: "key03qIMV5bFoWdvj" }).base('appxdFddKFJGA9LAb');
 
-export function ACOtherGrid() {
-    const [others, setOthers] =useState([])
+export function MSFSAirportsGrid() {
+    const [airports, setAirports] =useState([])
 
     useEffect(() => {
-        base("acother")
+        base("msfsairports")
         .select({ 
             view: "Grid view",
             sort:[
@@ -19,17 +19,17 @@ export function ACOtherGrid() {
             ],
         })
             .eachPage((records, fetchNextPage) => {
-                setOthers(records)
+                setAirports(records)
                 fetchNextPage();
             })
     }, []);
 
     return (
         <>
-            <div className={styles.maintitleMods} id="other">Other</div>
+            <div className={styles.maintitleMods} id="airports">Airports</div>
             <ul className={styles.grid}>
-                {others.map((other) => (
-                    <ACOtherCard key={other.id} other={other} />
+                {airports.map((airport) => (
+                    <MSFSAirportsCard key={airport.id} airport={airport} />
                 ))}
             </ul>
         </>
