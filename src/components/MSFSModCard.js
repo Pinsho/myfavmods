@@ -10,7 +10,7 @@ export const MSFSModCard = ({ mod }) => {
             <div className={styles.cardBody}>
                 <div className={styles.title}>{mod.fields.Name}</div>
                 <div className={styles.type}><i className='bx bxs-bookmark' ></i>Category: <div className={styles.right}>{mod.fields.TypeName}</div></div>
-                <div className={styles.type}><i className='bx bxs-wrench' ></i>Manufacturer: <div className={styles.right}>{mod.fields.Manufacturer}</div></div>
+                <div className={styles.type}><i className='bx bxs-factory'></i>Manufacturer: <div className={styles.right}>{mod.fields.Manufacturer}</div></div>
                 <div className={styles.type}><i className='bx bxs-user' ></i>Developer: <div className={styles.right}>{mod.fields.Developer}</div></div>
                 <div className='dwnButton'><a href={mod.fields.URL} target="_blank" rel="noreferrer" className={styles.downloadButtonMSFS}>Download</a></div>
             </div>

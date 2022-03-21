@@ -4,8 +4,6 @@ import logomsfs from '../../img/msfs2020.png';
 import logoac from '../../img/ac.png';
 import logorf2 from '../../img/rfactor2.png';
 import logodaw from '../../img/daw.png';
-import logovst from '../../img/vst.png';
-import logosamples from '../../img/samples.png';
 import { Link } from "react-router-dom";
 
 export default class Home extends Component {
@@ -39,23 +37,23 @@ export default class Home extends Component {
                             </div>
                         </ul>
                     </div>
-                    {/* <div className='categoryContainer'>
-                        <div className='homeSection'><i className='bx bxs-music' ></i><span>MUSIC PRODUCTION</span></div>
+                    <div className='categoryContainer'>
+                        <div className='homeSection'><i className='bx bxs-music' ></i><span>MUSIC</span></div>
                         <ul className='homeGrid'>
                             <div className='wrapper'>
-                                <Link to="/daw"><img src={logodaw} height={64} alt="DAWs"/></Link>
-                                <span className='long'><Link to="/daw">DAWs</Link></span>
+                                <Link to="/musicproduction"><img src={logodaw} height={64} alt="Music Production"/></Link>
+                                <span className='long'><Link to="/musicproduction">Music Production</Link></span>
                             </div>
-                            <div className='wrapper'>
+                            {/* <div className='wrapper'>
                                 <Link to="/vst"><img src={logovst} height={64} alt="VSTs"/></Link>
                                 <span className='long'><Link to="/vst">VSTs</Link></span>
                             </div>
                             <div className='wrapper'>
                                 <Link to="/samples"><img src={logosamples} height={64} alt="Samples"/></Link>
                                 <span className='long'><Link to="/samples">Samples</Link></span>
-                            </div>
+                            </div> */}
                         </ul>
-                    </div> */}
+                    </div>
                 </div>
             </div>
         )

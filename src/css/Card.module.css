@@ -155,7 +155,7 @@
 
 .downloadButtonRF2 {
   margin-top: 10px;
-  background-color: #00C2EE;
+  background-color: #00c2ee;
   border-color: #02b5dd;
   width: 100%;
   border: 1px solid transparent;
@@ -183,6 +183,38 @@
 .downloadButtonRF2:hover {
   background-color: #0394b4;
   border-color: #0486a3;
+}
+
+.downloadButtonMusic {
+  margin-top: 10px;
+  background-color: #4c4ddb;
+  border-color: #4747c7;
+  width: 100%;
+  border: 1px solid transparent;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5;
+  padding: 0.375rem 0.75rem;
+  text-align: center;
+  text-decoration: none;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  vertical-align: middle;
+}
+
+.downloadButtonMusic:hover {
+  background-color: #3b3bb9;
+  border-color: #3535a7;
 }
 
 .info {

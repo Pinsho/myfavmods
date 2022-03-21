@@ -1,6 +1,6 @@
 @import "https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900";
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
 * {
   box-sizing: border-box;
@@ -17,7 +17,8 @@ h5 {
   padding-left: 30px;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
   /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -25,7 +26,7 @@ html, body {
     sans-serif; */
   /* font-family: Lato,sans-serif !important; */
   /* font-family: 'Poppins', sans-serif; */
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: rgb(51, 48, 54);
@@ -56,15 +57,14 @@ html, body {
   max-width: 100%;
 }
 
-#linksContainer{
+#linksContainer {
   width: 100%;
   line-height: 40px;
   max-width: 960px;
   /* border: 2px solid red; */
   margin: 5px auto 7px;
   text-align: center;
-    
-  }
+}
 
 .links {
   display: inline-block;
@@ -86,7 +86,8 @@ html, body {
 }
 
 .wrapper img {
-  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
   border-radius: 5px;
 }
 
@@ -126,9 +127,9 @@ html, body {
   display: inline-block;
   white-space: normal;
   vertical-align: middle;
-  text-align:center;
-  
-  color: #FFF;
+  text-align: center;
+
+  color: #fff;
 }
 
 .helper {
@@ -142,7 +143,7 @@ html, body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
@@ -153,9 +154,8 @@ code {
 
 .category {
   margin: auto;
-  max-width: 1100px;
+  max-width: 960px;
 }
-
 
 .homeGrid {
   position: relative;
@@ -181,7 +181,8 @@ code {
   border-top-right-radius: 5px;
   text-align: center;
   color: rgb(206, 206, 206);
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
   z-index: 5;
 }
 
@@ -190,7 +191,7 @@ code {
   margin: 0 10px;
 }
 
-.header{
+.header {
   position: absolute;
   top: 0;
   margin-left: 145px;
@@ -241,7 +242,7 @@ code {
   text-align: left;
 }
 
-.homeTitle:hover{
+.homeTitle:hover {
   background-color: rgba(136, 136, 136, 0.247);
 }
 
@@ -286,10 +287,10 @@ code {
 }
 
 .instagram:hover {
-  color: #C72945;
+  color: #c72945;
 }
 
-.twitter:hover{
+.twitter:hover {
   color: rgb(53, 142, 224);
 }
 
@@ -323,7 +324,8 @@ code {
   /* border: none; */
 }
 
-.dropdown-item.active, .dropdown-item:active {
+.dropdown-item.active,
+.dropdown-item:active {
   color: #fff;
   text-decoration: none;
   background-color: #212529;
@@ -340,7 +342,8 @@ code {
   cursor: pointer;
   border-radius: 5px;
   border: none;
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 }
 
 .back-to-top i {

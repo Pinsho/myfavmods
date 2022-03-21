@@ -12,6 +12,7 @@ import DCS from './pages/DCS';
 import MSFS2020 from './pages/MSFS2020';
 import AssettoCorsa from './pages/AssettoCorsa';
 import Rfactor2 from './pages/Rfactor2';
+import MusicProd from './pages/MusicProd';
 
 export default class NavbarComp extends Component {
     render() {
@@ -38,6 +39,7 @@ export default class NavbarComp extends Component {
                                     <NavDropdown.Item as={Link} to="/assettocorsa">Assetto Corsa</NavDropdown.Item>
                                     <NavDropdown.Item as={Link} to="/rfactor2">rFactor 2</NavDropdown.Item>
                                 </NavDropdown>
+                                <Nav.Link as={Link} to="/musicproduction">Muscic Production</Nav.Link>
                                 {/* <Nav.Link as={Link} to="/contact">Contact</Nav.Link> */}
                             </Nav>
                         </Navbar.Collapse>
@@ -50,6 +52,9 @@ export default class NavbarComp extends Component {
                         <Route exact path="/msfs2020" element={<MSFS2020/>}/>
                         <Route exact path="/rfactor2" element={<Rfactor2/>}/>
                         <Route exact path="/assettocorsa" element={<AssettoCorsa/>}/>
+                        <Route exact path="/musicproduction" element={<MusicProd/>}/>
+                        {/* <Route exact path="/vst" element={<AssettoCorsa/>}/>
+                        <Route exact path="/samples" element={<AssettoCorsa/>}/> */}
                         {/* <Route path="/contact" element={<Contact/>}/> */}
                     </Routes>
                 </div>
