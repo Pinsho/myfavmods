@@ -362,3 +362,7 @@ code {
   padding: 10px 40px;
   justify-content: center;
 }
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
