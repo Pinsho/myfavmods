@@ -60,13 +60,8 @@
 .downloadButtonDCS {
   margin-top: 10px;
   background-color: #efbb43;
-  border-color: #dfaf3f;
+  border: 1px solid #99782c;
   width: 100%;
-  border: 1px solid transparent;
-  border-top-color: transparent;
-  border-right-color: transparent;
-  border-bottom-color: transparent;
-  border-left-color: transparent;
   border-radius: 0.25rem;
   cursor: pointer;
   display: inline-block;
@@ -86,19 +81,14 @@
 
 .downloadButtonDCS:hover {
   background-color: #e09f06;
-  border-color: #ce9206;
+  border-color: #a67706;
 }
 
 .downloadButtonMSFS {
   margin-top: 10px;
   background-color: #008fcc;
-  border-color: #0389c2;
+  border: 1px solid #0680b4;
   width: 100%;
-  border: 1px solid transparent;
-  border-top-color: transparent;
-  border-right-color: transparent;
-  border-bottom-color: transparent;
-  border-left-color: transparent;
   border-radius: 0.25rem;
   cursor: pointer;
   display: inline-block;
@@ -124,13 +114,8 @@
 .downloadButtonAC {
   margin-top: 10px;
   background-color: #c21d37;
-  border-color: #a1192d;
+  border: 1px solid #a1192d;
   width: 100%;
-  border: 1px solid transparent;
-  border-top-color: transparent;
-  border-right-color: transparent;
-  border-bottom-color: transparent;
-  border-left-color: transparent;
   border-radius: 0.25rem;
   cursor: pointer;
   display: inline-block;
@@ -156,13 +141,8 @@
 .downloadButtonRF2 {
   margin-top: 10px;
   background-color: #00c2ee;
-  border-color: #02b5dd;
+  border: 1px solid #017893;
   width: 100%;
-  border: 1px solid transparent;
-  border-top-color: transparent;
-  border-right-color: transparent;
-  border-bottom-color: transparent;
-  border-left-color: transparent;
   border-radius: 0.25rem;
   cursor: pointer;
   display: inline-block;
@@ -188,13 +168,8 @@
 .downloadButtonMusic {
   margin-top: 10px;
   background-color: #f3722c;
-  border-color: #ca5f25;
   width: 100%;
-  border: 1px solid transparent;
-  border-top-color: transparent;
-  border-right-color: transparent;
-  border-bottom-color: transparent;
-  border-left-color: transparent;
+  border: 1px solid #db692b;
   border-radius: 0.25rem;
   cursor: pointer;
   display: inline-block;
