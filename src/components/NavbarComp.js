@@ -7,12 +7,12 @@ import {
     Link
 } from "react-router-dom";
 
-import Home from './pages/Home';
-import DCS from './pages/DCS';
-import MSFS2020 from './pages/MSFS2020';
-import AssettoCorsa from './pages/AssettoCorsa';
-import Rfactor2 from './pages/Rfactor2';
-import MusicProd from './pages/MusicProd';
+import Home from '../pages/Home';
+import DCS from '../pages/DCS';
+import MSFS2020 from '../pages/MSFS2020';
+import AssettoCorsa from '../pages/AssettoCorsa';
+import Rfactor2 from '../pages/Rfactor2';
+import MusicProd from '../pages/MusicProd';
 
 export default class NavbarComp extends Component {
     render() {

@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import logomsfs from '../../img/msfs2020.png';
-import { MSFSModsGrid } from '../MSFSModsGrid';
-import { MSFSLiveriesGrid } from '../MSFSLiveriesGrid';
-import { MSFSAirportsGrid } from '../MSFSAirportsGrid';
-import { MSFSOtherGrid } from '../MSFSOtherGrid';
+import logomsfs from '../img/msfs2020.png';
+import { MSFSModsGrid } from '../components/MSFSModsGrid';
+import { MSFSLiveriesGrid } from '../components/MSFSLiveriesGrid';
+import { MSFSAirportsGrid } from '../components/MSFSAirportsGrid';
+import { MSFSOtherGrid } from '../components/MSFSOtherGrid';
 
 
 export default class MSFS2020 extends Component{

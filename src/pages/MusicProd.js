@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import logodaw from '../../img/daw.png';
-import { MusicDawGrid } from '../MusicDawGrid';
-import { MusicVstGrid } from '../MusicVstGrid';
+import logodaw from '../img/daw.png';
+import { MusicDawGrid } from '../components/MusicDawGrid';
+import { MusicVstGrid } from '../components/MusicVstGrid';
+import { MusicSamplesGrid } from '../components/MusicSamplesGrid';
 
 export default class MusicProd extends Component{
     render() {
@@ -16,11 +17,13 @@ export default class MusicProd extends Component{
                         <div className='links'>
                             <span><a href="#daws">DAWs</a></span>
                             <span><a href="#vsts">VSTs</a></span>
+                            <span><a href="#samples">Samples</a></span>
                         </div>
                     </div>
                 </div>
                 <MusicDawGrid/>
                 <MusicVstGrid/>
+                <MusicSamplesGrid/>
             </div>
         );
     }

@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
-import logoac from '../../img/ac.png';
-import { ACCarsGrid } from '../ACCarsGrid';
-import { ACTracksGrid } from '../ACTracksGrid';
-import { ACOtherGrid } from '../ACOtherGrid';
+import logorf2 from '../img/rfactor2.png';
+import { Rfactor2CarsGrid } from '../components/Rfactor2CarsGrid';
+import { Rfactor2TracksGrid } from '../components/Rfactor2TracksGrid';
+import { Rfactor2OtherGrid } from '../components/Rfactor2OtherGrid';
 
-export default class AssettoCorsa extends Component{
+export default class Rfactor2 extends Component{
     render() {
         return (
             <div>
                 <div className='sectionHeader'>
                     <div className='wrapper'>
-                        <img src={logoac} height={64} alt="Assetto Corsa"/>
-                        <span className='long title'>Assetto Corsa</span>
+                        <img src={logorf2} height={64} alt="rFactor 2"/>
+                        <span className='long title'>rFactor 2</span>
                     </div>
                     <div id="linksContainer">
                         <div className='links'>
@@ -21,9 +21,9 @@ export default class AssettoCorsa extends Component{
                         </div>
                     </div>
                 </div>
-                <ACCarsGrid/>
-                <ACTracksGrid/>
-                <ACOtherGrid/>
+                <Rfactor2CarsGrid/>
+                <Rfactor2TracksGrid/>
+                <Rfactor2OtherGrid/>
             </div>
             
         );

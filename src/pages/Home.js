@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import logodcs from '../../img/dcs.png';
-import logomsfs from '../../img/msfs2020.png';
-import logoac from '../../img/ac.png';
-import logorf2 from '../../img/rfactor2.png';
-import logodaw from '../../img/daw.png';
+import logodcs from '../img/dcs.png';
+import logomsfs from '../img/msfs2020.png';
+import logoac from '../img/ac.png';
+import logorf2 from '../img/rfactor2.png';
+import logodaw from '../img/daw.png';
 import { Link } from "react-router-dom";
 
 export default class Home extends Component {

@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import { DCSModsGrid } from "../DCSModsGrid";
-import { DCSMissionsGrid } from "../DCSMissionsGrid";
-import { DCSOtherGrid } from "../DCSOtherGrid";
-import logodcs from '../../img/dcs.png';
+import { DCSModsGrid } from "../components/DCSModsGrid";
+import { DCSMissionsGrid } from "../components/DCSMissionsGrid";
+import { DCSOtherGrid } from "../components/DCSOtherGrid";
+import logodcs from '../img/dcs.png';
 
 export default class DCS extends Component{
     render() {
