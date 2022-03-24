@@ -1,7 +1,7 @@
 import styles from '../css/Grid.module.css';
-import { DCSModCard } from './DCSModCard';
-import { DCSMissionCard } from './DCSMissionCard';
-import { DCSOtherCard } from './DCSOtherCard';
+import { MusicDawCard } from './MusicDawCard';
+import { MusicVstCard } from './MusicVstCard';
+import { MusicSamplesCard } from './MusicSamplesCard';
 import Airtable from 'airtable';
 import React, { useEffect, useState } from 'react';
 import { Spinner } from './Spinner';
@@ -9,13 +9,12 @@ import { useLocation } from 'react-router-dom';
 
 const base = new Airtable({ apiKey: "key03qIMV5bFoWdvj" }).base('appxdFddKFJGA9LAb');
 
-export function DCSModsGrid() {
-
-    const [mods, setMods] = useState([]);
-    const [missions, setMissions] = useState([]);
-    const [others, setOther] = useState([]);
+export function MusicModsGrid() {
+    const [daws, setDaws] =useState([])
+    const [vsts, setVsts] =useState([])
+    const [samples, setSamples] = useState([])
     const [isLoading, SetIsLoading] = useState(true);
-    
+
     function useQuery() {
         return new  URLSearchParams(useLocation().search);
     }
@@ -30,23 +29,7 @@ export function DCSModsGrid() {
         ? search
         : "";
 
-        base("dcsmods")
-            .select({ 
-                view: "Grid view",
-                /* === USE filterByFormula: "Search('Some_Text',{Field_Name})" === */
-                filterByFormula: "Search('" + filter.toLowerCase() + "', {Name_low})",
-                sort:[
-                    {
-                        field: 'Name', direction: 'asc'
-                    }
-                ],
-            })
-            .eachPage((records, fetchNextPage) => {
-                setMods(records)
-                fetchNextPage();
-                
-            })
-        base("dcsmissions")
+        base("musicdaw")
             .select({ 
                 view: "Grid view",
                 filterByFormula: "Search('" + filter.toLowerCase() + "', {Name_low})",
@@ -57,10 +40,10 @@ export function DCSModsGrid() {
                 ],
             })
             .eachPage((records, fetchNextPage) => {
-                setMissions(records)
+                setDaws(records)
                 fetchNextPage();
             })
-        base("dcsother")
+        base("musicvst")
             .select({ 
                 view: "Grid view",
                 filterByFormula: "Search('" + filter.toLowerCase() + "', {Name_low})",
@@ -71,9 +54,23 @@ export function DCSModsGrid() {
                 ],
             })
             .eachPage((records, fetchNextPage) => {
-                setOther(records)
+                setVsts(records)
                 fetchNextPage();
-                SetIsLoading(false)
+            })
+        base("musicsamples")
+            .select({ 
+                view: "Grid view",
+                filterByFormula: "Search('" + filter.toLowerCase() + "', {Name_low})",
+                sort:[
+                    {
+                        field: 'Name', direction: 'asc'
+                    }
+                ],
+            })
+            .eachPage((records, fetchNextPage) => {
+                setSamples(records)
+                SetIsLoading(false);
+                fetchNextPage();
             })
     }, [search]);
 
@@ -85,24 +82,22 @@ export function DCSModsGrid() {
 
     return (
         <>
-            <div className={styles.maintitleDCSMods} id="mods">MODs</div>
-            <div>
-                <ul className={styles.grid}>
-                    {mods.map((mod) => (
-                        <DCSModCard key={mod.id} mod={mod} />
-                    ))}
-                </ul>
-            </div>
-            <div className={styles.maintitleDCSMissions} id="missions">Missions</div>
+            <div className={styles.maintitleMusicDaw} id="daws">DAWs</div>
             <ul className={styles.grid}>
-                {missions.map((mission) => (
-                    <DCSMissionCard key={mission.id} mission={mission} />
+                {daws.map((daw) => (
+                    <MusicDawCard key={daw.id} daw={daw} />
                 ))}
             </ul>
-            <div className={styles.maintitleDCSOther} id="other">Other</div>
+            <div className={styles.maintitleMusicVST} id="vsts">VSTs</div>
             <ul className={styles.grid}>
-                {others.map((other) => (
-                    <DCSOtherCard key={other.id} other={other} />
+                {vsts.map((vst) => (
+                    <MusicVstCard key={vst.id} vst={vst} />
+                ))}
+            </ul>
+            <div className={styles.maintitleSamples} id="samples">Samples</div>
+            <ul className={styles.grid}>
+                {samples.map((sample) => (
+                    <MusicSamplesCard key={sample.id} sample={sample} />
                 ))}
             </ul>
         </>

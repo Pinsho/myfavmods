@@ -1,18 +1,19 @@
 import React, { Component } from 'react';
 import { DCSModsGrid } from "../components/DCSModsGrid";
-import { DCSMissionsGrid } from "../components/DCSMissionsGrid";
-import { DCSOtherGrid } from "../components/DCSOtherGrid";
 import logodcs from '../img/dcs.png';
+import { Search } from '../components/Search';
 
 export default class DCS extends Component{
     render() {
         return (
             <div>
+                
                 <div className='sectionHeader'>
                     <div className='wrapper'>
                         <img src={logodcs} height={64} alt="DCS World"/>
                         <span className='long title'>Digital Combat Simulator World</span>
                     </div>
+                    <Search/>
                     <div id="linksContainer">
                         <div className='links'>
                             <span><a href="#mods">Mods</a></span>
@@ -22,8 +23,6 @@ export default class DCS extends Component{
                     </div>
                 </div>
                 <DCSModsGrid />
-                <DCSMissionsGrid /> 
-                <DCSOtherGrid />
             </div>
             
         );

@@ -2,6 +2,7 @@ import styles from '../css/Grid.module.css';
 import { DCSMissionCard } from './DCSMissionCard';
 import Airtable from 'airtable';
 import React, { useEffect, useState } from 'react';
+import { Spinner } from './Spinner';
 
 const base = new Airtable({ apiKey: "key03qIMV5bFoWdvj" }).base('appxdFddKFJGA9LAb');
 
@@ -14,7 +15,7 @@ export function DCSMissionsGrid() {
             view: "Grid view",
             sort:[
                 {
-                    field: 'Title', direction: 'asc'
+                    field: 'Name', direction: 'asc'
                 }
             ],
         })

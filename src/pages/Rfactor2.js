@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import logorf2 from '../img/rfactor2.png';
-import { Rfactor2CarsGrid } from '../components/Rfactor2CarsGrid';
-import { Rfactor2TracksGrid } from '../components/Rfactor2TracksGrid';
-import { Rfactor2OtherGrid } from '../components/Rfactor2OtherGrid';
+import { Rfactor2ModsGrid } from '../components/Rfactor2ModsGrid';
+import { Search } from '../components/Search';
 
 export default class Rfactor2 extends Component{
     render() {
@@ -13,6 +12,7 @@ export default class Rfactor2 extends Component{
                         <img src={logorf2} height={64} alt="rFactor 2"/>
                         <span className='long title'>rFactor 2</span>
                     </div>
+                    <Search/>
                     <div id="linksContainer">
                         <div className='links'>
                             <span><a href="#cars">Cars</a></span>
@@ -21,9 +21,7 @@ export default class Rfactor2 extends Component{
                         </div>
                     </div>
                 </div>
-                <Rfactor2CarsGrid/>
-                <Rfactor2TracksGrid/>
-                <Rfactor2OtherGrid/>
+                <Rfactor2ModsGrid/>
             </div>
             
         );

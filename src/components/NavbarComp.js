@@ -1,5 +1,5 @@
-import React, { Component } from 'react'
-import { Navbar, NavDropdown, Nav } from 'react-bootstrap'
+import React, { Component } from 'react';
+import { Navbar, NavDropdown, Nav } from 'react-bootstrap';
 import {
     BrowserRouter as Router,
     Routes,
@@ -47,12 +47,13 @@ export default class NavbarComp extends Component {
                 </div>
                 <div>
                     <Routes>
-                        <Route exact path="/" element={<Home/>}/>
-                        <Route exact path="/dcs" element={<DCS/>}/>
-                        <Route exact path="/msfs2020" element={<MSFS2020/>}/>
-                        <Route exact path="/rfactor2" element={<Rfactor2/>}/>
-                        <Route exact path="/assettocorsa" element={<AssettoCorsa/>}/>
-                        <Route exact path="/musicproduction" element={<MusicProd/>}/>
+                        <Route path="*" element={<div><h1>404 NOT FOUND</h1></div>}/>
+                        <Route path="/" element={<Home/>}/>
+                        <Route path="/dcs" element={<DCS/>}/>
+                        <Route path="/msfs2020" element={<MSFS2020/>}/>
+                        <Route path="/rfactor2" element={<Rfactor2/>}/>
+                        <Route path="/assettocorsa" element={<AssettoCorsa/>}/>
+                        <Route path="/musicproduction" element={<MusicProd/>}/>
                         {/* <Route exact path="/vst" element={<AssettoCorsa/>}/>
                         <Route exact path="/samples" element={<AssettoCorsa/>}/> */}
                         {/* <Route path="/contact" element={<Contact/>}/> */}

@@ -1,7 +1,7 @@
 import styles from '../css/Grid.module.css';
-import { DCSModCard } from './DCSModCard';
-import { DCSMissionCard } from './DCSMissionCard';
-import { DCSOtherCard } from './DCSOtherCard';
+import { Rfactor2CarCard } from './Rfactor2CarCard';
+import { Rfactor2TrackCard } from './Rfactor2TrackCard';
+import { Rfactor2OtherCard } from './Rfactor2OtherCard';
 import Airtable from 'airtable';
 import React, { useEffect, useState } from 'react';
 import { Spinner } from './Spinner';
@@ -9,13 +9,12 @@ import { useLocation } from 'react-router-dom';
 
 const base = new Airtable({ apiKey: "key03qIMV5bFoWdvj" }).base('appxdFddKFJGA9LAb');
 
-export function DCSModsGrid() {
-
-    const [mods, setMods] = useState([]);
-    const [missions, setMissions] = useState([]);
-    const [others, setOther] = useState([]);
+export function Rfactor2ModsGrid() {
+    const [cars, setCars] =useState([])
+    const [tracks, setTracks] =useState([])
+    const [others, setOther] =useState([])
     const [isLoading, SetIsLoading] = useState(true);
-    
+
     function useQuery() {
         return new  URLSearchParams(useLocation().search);
     }
@@ -30,10 +29,24 @@ export function DCSModsGrid() {
         ? search
         : "";
 
-        base("dcsmods")
+        base("rf2cars")
+        .select({ 
+            view: "Grid view",
+            filterByFormula: "Search('" + filter.toLowerCase() + "', {Name_low})",
+            sort:[
+                {
+                    field: 'Name', direction: 'asc'
+                }
+            ],
+        })
+            .eachPage((records, fetchNextPage) => {
+                setCars(records)
+                SetIsLoading(false);
+                fetchNextPage();
+            })
+        base("rf2tracks")
             .select({ 
                 view: "Grid view",
-                /* === USE filterByFormula: "Search('Some_Text',{Field_Name})" === */
                 filterByFormula: "Search('" + filter.toLowerCase() + "', {Name_low})",
                 sort:[
                     {
@@ -42,25 +55,10 @@ export function DCSModsGrid() {
                 ],
             })
             .eachPage((records, fetchNextPage) => {
-                setMods(records)
-                fetchNextPage();
-                
-            })
-        base("dcsmissions")
-            .select({ 
-                view: "Grid view",
-                filterByFormula: "Search('" + filter.toLowerCase() + "', {Name_low})",
-                sort:[
-                    {
-                        field: 'Name', direction: 'asc'
-                    }
-                ],
-            })
-            .eachPage((records, fetchNextPage) => {
-                setMissions(records)
+                setTracks(records)
                 fetchNextPage();
             })
-        base("dcsother")
+        base("rfactor2other")
             .select({ 
                 view: "Grid view",
                 filterByFormula: "Search('" + filter.toLowerCase() + "', {Name_low})",
@@ -73,7 +71,6 @@ export function DCSModsGrid() {
             .eachPage((records, fetchNextPage) => {
                 setOther(records)
                 fetchNextPage();
-                SetIsLoading(false)
             })
     }, [search]);
 
@@ -85,24 +82,22 @@ export function DCSModsGrid() {
 
     return (
         <>
-            <div className={styles.maintitleDCSMods} id="mods">MODs</div>
-            <div>
-                <ul className={styles.grid}>
-                    {mods.map((mod) => (
-                        <DCSModCard key={mod.id} mod={mod} />
-                    ))}
-                </ul>
-            </div>
-            <div className={styles.maintitleDCSMissions} id="missions">Missions</div>
+            <div className={styles.maintitleRf2Cars} id="cars">Cars</div>
             <ul className={styles.grid}>
-                {missions.map((mission) => (
-                    <DCSMissionCard key={mission.id} mission={mission} />
+                {cars.map((car) => (
+                    <Rfactor2CarCard key={car.id} car={car} />
                 ))}
             </ul>
-            <div className={styles.maintitleDCSOther} id="other">Other</div>
+            <div className={styles.maintitleRf2Tracks} id="tracks">Tracks</div>
+            <ul className={styles.grid}>
+                {tracks.map((track) => (
+                    <Rfactor2TrackCard key={track.id} track={track} />
+                ))}
+            </ul>
+            <div className={styles.maintitleRf2Other} id="other">Other</div>
             <ul className={styles.grid}>
                 {others.map((other) => (
-                    <DCSOtherCard key={other.id} other={other} />
+                    <Rfactor2OtherCard key={other.id} other={other} />
                 ))}
             </ul>
         </>

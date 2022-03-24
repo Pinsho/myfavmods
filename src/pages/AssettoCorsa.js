@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import logoac from '../img/ac.png';
-import { ACCarsGrid } from '../components/ACCarsGrid';
-import { ACTracksGrid } from '../components/ACTracksGrid';
-import { ACOtherGrid } from '../components/ACOtherGrid';
+import { ACModsGrid } from '../components/ACModsGrid';
+import { Search } from '../components/Search';
 
 export default class AssettoCorsa extends Component{
     render() {
@@ -13,6 +12,7 @@ export default class AssettoCorsa extends Component{
                         <img src={logoac} height={64} alt="Assetto Corsa"/>
                         <span className='long title'>Assetto Corsa</span>
                     </div>
+                    <Search/>
                     <div id="linksContainer">
                         <div className='links'>
                             <span><a href="#cars">Cars</a></span>
@@ -21,9 +21,7 @@ export default class AssettoCorsa extends Component{
                         </div>
                     </div>
                 </div>
-                <ACCarsGrid/>
-                <ACTracksGrid/>
-                <ACOtherGrid/>
+                <ACModsGrid/>
             </div>
             
         );

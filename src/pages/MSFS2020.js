@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
 import logomsfs from '../img/msfs2020.png';
 import { MSFSModsGrid } from '../components/MSFSModsGrid';
-import { MSFSLiveriesGrid } from '../components/MSFSLiveriesGrid';
-import { MSFSAirportsGrid } from '../components/MSFSAirportsGrid';
-import { MSFSOtherGrid } from '../components/MSFSOtherGrid';
-
+import { Search } from '../components/Search';
 
 export default class MSFS2020 extends Component{
     render() {
@@ -15,6 +12,7 @@ export default class MSFS2020 extends Component{
                         <img src={logomsfs} height={64} alt="Miscrosoft Flight Simulator 2020"/>
                         <span className='long title'>Miscrosoft Flight Simulator 2020</span>
                     </div>
+                    <Search/>
                     <div id="linksContainer">
                         <div className='links'>
                             <span><a href="#addons">Addons</a></span>
@@ -25,9 +23,9 @@ export default class MSFS2020 extends Component{
                     </div>
                 </div>
                 <MSFSModsGrid />
-                <MSFSAirportsGrid />
+                {/* <MSFSAirportsGrid />
                 <MSFSLiveriesGrid />
-                <MSFSOtherGrid />
+                <MSFSOtherGrid /> */}
             </div>
         );
     }

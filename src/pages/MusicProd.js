@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import logodaw from '../img/daw.png';
-import { MusicDawGrid } from '../components/MusicDawGrid';
-import { MusicVstGrid } from '../components/MusicVstGrid';
-import { MusicSamplesGrid } from '../components/MusicSamplesGrid';
+import { MusicModsGrid } from '../components/MusicModsGrid';
+import { Search } from '../components/Search';
 
 export default class MusicProd extends Component{
     render() {
@@ -13,6 +12,7 @@ export default class MusicProd extends Component{
                         <img src={logodaw} height={64} alt="Music Production"/>
                         <span className='long title'>Music Production</span>
                     </div>
+                    <Search/>
                     <div id="linksContainer">
                         <div className='links'>
                             <span><a href="#daws">DAWs</a></span>
@@ -21,9 +21,7 @@ export default class MusicProd extends Component{
                         </div>
                     </div>
                 </div>
-                <MusicDawGrid/>
-                <MusicVstGrid/>
-                <MusicSamplesGrid/>
+                <MusicModsGrid/>
             </div>
         );
     }

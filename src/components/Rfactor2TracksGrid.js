@@ -22,20 +22,6 @@ export function Rfactor2TracksGrid() {
                 setTracks(records)
                 fetchNextPage();
             })
-        /* base("missions")
-        .select({ view: "Grid view" })
-        .eachPage((records, fetchNextPage) => {
-            console.log(records);
-            setMissions(records)
-            fetchNextPage();
-        })
-        base("other")
-        .select({ view: "Grid view" })
-        .eachPage((records, fetchNextPage) => {
-            console.log(records);
-            setOther(records)
-            fetchNextPage();
-        }) */
     }, []);
 
     return (
