@@ -1,7 +1,7 @@
 .searchContainer {
     display: flex;
     justify-content: center;
-    margin: 5px 10px 10px 10px;
+    margin: 10px;
 }
 
 .searchBox {
