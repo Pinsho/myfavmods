@@ -29,10 +29,14 @@ export function MusicModsGrid() {
         ? search
         : "";
 
+        const formulaDAW = "SUM(Search('" + filter.toLowerCase() + "', {Name_low}),Search('" + filter.toLowerCase() + "', {Developer_low}),Search('" + filter.toLowerCase() + "', {Platform_low}))";
+        const formulaVST = "SUM(Search('" + filter.toLowerCase() + "', {Name_low}),Search('" + filter.toLowerCase() + "', {Developer_low}),Search('" + filter.toLowerCase() + "', {Platform_low}),Search('" + filter.toLowerCase() + "', {Type_low}))";
+        const formulaSamples = "SUM(Search('" + filter.toLowerCase() + "', {Name_low}),Search('" + filter.toLowerCase() + "', {Developer_low}),Search('" + filter.toLowerCase() + "', {Genre_low}))";
+
         base("musicdaw")
             .select({ 
                 view: "Grid view",
-                filterByFormula: "Search('" + filter.toLowerCase() + "', {Name_low})",
+                filterByFormula: formulaDAW,
                 sort:[
                     {
                         field: 'Name', direction: 'asc'
@@ -46,7 +50,7 @@ export function MusicModsGrid() {
         base("musicvst")
             .select({ 
                 view: "Grid view",
-                filterByFormula: "Search('" + filter.toLowerCase() + "', {Name_low})",
+                filterByFormula: formulaVST,
                 sort:[
                     {
                         field: 'Name', direction: 'asc'
@@ -60,7 +64,7 @@ export function MusicModsGrid() {
         base("musicsamples")
             .select({ 
                 view: "Grid view",
-                filterByFormula: "Search('" + filter.toLowerCase() + "', {Name_low})",
+                filterByFormula: formulaSamples,
                 sort:[
                     {
                         field: 'Name', direction: 'asc'

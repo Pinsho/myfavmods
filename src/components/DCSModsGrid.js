@@ -30,11 +30,16 @@ export function DCSModsGrid() {
         ? search
         : "";
 
+        const formulaMods = "SUM(Search('" + filter.toLowerCase() + "', {Name_low}),Search('" + filter.toLowerCase() + "', {Type_low}),Search('" + filter.toLowerCase() + "', {Manufacturer_low}),Search('" + filter.toLowerCase() + "', {Year}))";
+        const formulaMissions = "SUM(Search('" + filter.toLowerCase() + "', {Name_low}),Search('" + filter.toLowerCase() + "', {Type_low}),Search('" + filter.toLowerCase() + "', {Unit_low}),Search('" + filter.toLowerCase() + "', {Map_low}),Search('" + filter.toLowerCase() + "', {AditionalMods_low}))";
+        const formulaOther = "SUM(Search('" + filter.toLowerCase() + "', {Name_low}),Search('" + filter.toLowerCase() + "', {Type_low}))";
+
         base("dcsmods")
             .select({ 
                 view: "Grid view",
                 /* === USE filterByFormula: "Search('Some_Text',{Field_Name})" === */
-                filterByFormula: "Search('" + filter.toLowerCase() + "', {Name_low})",
+                /* filterByFormula: "Search('" + filter.toLowerCase() + "', {Name_low})", */
+                filterByFormula: formulaMods,
                 sort:[
                     {
                         field: 'Name', direction: 'asc'
@@ -49,7 +54,7 @@ export function DCSModsGrid() {
         base("dcsmissions")
             .select({ 
                 view: "Grid view",
-                filterByFormula: "Search('" + filter.toLowerCase() + "', {Name_low})",
+                filterByFormula: formulaMissions,
                 sort:[
                     {
                         field: 'Name', direction: 'asc'
@@ -63,7 +68,7 @@ export function DCSModsGrid() {
         base("dcsother")
             .select({ 
                 view: "Grid view",
-                filterByFormula: "Search('" + filter.toLowerCase() + "', {Name_low})",
+                filterByFormula: formulaOther,
                 sort:[
                     {
                         field: 'Name', direction: 'asc'

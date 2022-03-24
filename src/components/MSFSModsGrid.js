@@ -31,10 +31,15 @@ export function MSFSModsGrid() {
         ? search
         : "";
 
+        const formulaAddon = "SUM(Search('" + filter.toLowerCase() + "', {Name_low}),Search('" + filter.toLowerCase() + "', {Type_low}),Search('" + filter.toLowerCase() + "', {Developer_low}),Search('" + filter.toLowerCase() + "', {Manufacturer_low}))";
+        const formulaLiveries = "SUM(Search('" + filter.toLowerCase() + "', {Name_low}),Search('" + filter.toLowerCase() + "', {Airline_low}),Search('" + filter.toLowerCase() + "', {Airplane_low}),Search('" + filter.toLowerCase() + "', {Resolution_low}))";
+        const formulaAirports = "SUM(Search('" + filter.toLowerCase() + "', {Name_low}),Search('" + filter.toLowerCase() + "', {OACI_low}),Search('" + filter.toLowerCase() + "', {Type_low}),Search('" + filter.toLowerCase() + "', {Location_low}))";
+        const formulaOther = "SUM(Search('" + filter.toLowerCase() + "', {Name_low}),Search('" + filter.toLowerCase() + "', {Type_low}))";
+        
         base("msfsmods")
             .select({ 
                 view: "Grid view",
-                filterByFormula: "Search('" + filter.toLowerCase() + "', {Name_low})",
+                filterByFormula: formulaAddon,
                 sort:[
                     {
                         field: 'Name', direction: 'asc'
@@ -48,7 +53,7 @@ export function MSFSModsGrid() {
         base("msfsliveries")
             .select({ 
                 view: "Grid view",
-                filterByFormula: "Search('" + filter.toLowerCase() + "', {Name_low})",
+                filterByFormula: formulaLiveries,
                 sort:[
                     {
                         field: 'Name', direction: 'asc'
@@ -62,7 +67,7 @@ export function MSFSModsGrid() {
         base("msfsairports")
             .select({ 
                 view: "Grid view",
-                filterByFormula: "Search('" + filter.toLowerCase() + "', {Name_low})",
+                filterByFormula: formulaAirports,
                 sort:[
                     {
                         field: 'Name', direction: 'asc'
@@ -76,7 +81,7 @@ export function MSFSModsGrid() {
         base("msfsother")
             .select({ 
                 view: "Grid view",
-                filterByFormula: "Search('" + filter.toLowerCase() + "', {Name_low})",
+                filterByFormula: formulaOther,
                 sort:[
                     {
                         field: 'Name', direction: 'asc'

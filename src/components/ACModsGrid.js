@@ -29,10 +29,14 @@ export function ACModsGrid() {
         ? search
         : "";
 
+        const formulaCars = "SUM(Search('" + filter.toLowerCase() + "', {Name_low}),Search('" + filter.toLowerCase() + "', {Type_low}),Search('" + filter.toLowerCase() + "', {WheelDrive_low}),Search('" + filter.toLowerCase() + "', {BHP_low}))";
+        const formulaTracks = "SUM(Search('" + filter.toLowerCase() + "', {Name_low}),Search('" + filter.toLowerCase() + "', {Location_low}),Search('" + filter.toLowerCase() + "', {Length_low}))";
+        const formulaOther = "SUM(Search('" + filter.toLowerCase() + "', {Name_low}),Search('" + filter.toLowerCase() + "', {Type_low}))";
+
         base("accars")
             .select({ 
                 view: "Grid view",
-                filterByFormula: "Search('" + filter.toLowerCase() + "', {Name_low})",
+                filterByFormula: formulaCars,
                 sort:[
                     {
                         field: 'Name', direction: 'asc'
@@ -46,7 +50,7 @@ export function ACModsGrid() {
         base("actracks")
             .select({ 
                 view: "Grid view",
-                filterByFormula: "Search('" + filter.toLowerCase() + "', {Name_low})",
+                filterByFormula: formulaTracks,
                 sort:[
                     {
                         field: 'Name', direction: 'asc'
@@ -60,7 +64,7 @@ export function ACModsGrid() {
         base("acother")
             .select({ 
                 view: "Grid view",
-                filterByFormula: "Search('" + filter.toLowerCase() + "', {Name_low})",
+                filterByFormula: formulaOther,
                 sort:[
                     {
                         field: 'Name', direction: 'asc'
