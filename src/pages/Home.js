@@ -12,7 +12,7 @@ export default class Home extends Component {
             <div className='home'>
                 <div className='category'>
                     <div className='categoryContainer'>
-                        <div className='homeSection'><i className='bx bxs-plane-alt'></i><span>FLIGHT SIMULATION</span></div>
+                        <div className='homeSection'><i className='bx bx-paper-plane'></i><span>FLIGHT SIMULATION</span></div>
                         <ul className='homeGrid'>
                             <div className='wrapper'>
                                 <Link to="/dcs"><img src={logodcs} height={64} alt="DCS World"/></Link>
@@ -25,7 +25,7 @@ export default class Home extends Component {
                         </ul>
                     </div>
                     <div className='categoryContainer'>
-                        <div className='homeSection'><i className='bx bxs-car' ></i><span>MOTOR SIMULATION</span></div>
+                        <div className='homeSection'><i className='bx bx-car' ></i><span>MOTOR SIMULATION</span></div>
                         <ul className='homeGrid'>
                             <div className='wrapper'>
                                 <Link to="/assettocorsa"><img src={logoac} height={64} alt="Assetto Corsa"/></Link>
@@ -38,20 +38,12 @@ export default class Home extends Component {
                         </ul>
                     </div>
                     <div className='categoryContainer'>
-                        <div className='homeSection'><i className='bx bxs-music' ></i><span>MUSIC</span></div>
+                        <div className='homeSection'><i className='bx bx-music' ></i><span>MUSIC</span></div>
                         <ul className='homeGrid'>
                             <div className='wrapper'>
                                 <Link to="/musicproduction"><img src={logodaw} height={64} alt="Music Production"/></Link>
                                 <span className='long'><Link to="/musicproduction">Music Production</Link></span>
                             </div>
-                            {/* <div className='wrapper'>
-                                <Link to="/vst"><img src={logovst} height={64} alt="VSTs"/></Link>
-                                <span className='long'><Link to="/vst">VSTs</Link></span>
-                            </div>
-                            <div className='wrapper'>
-                                <Link to="/samples"><img src={logosamples} height={64} alt="Samples"/></Link>
-                                <span className='long'><Link to="/samples">Samples</Link></span>
-                            </div> */}
                         </ul>
                     </div>
                 </div>

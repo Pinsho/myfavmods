@@ -232,7 +232,7 @@ code {
   color: #fff;
 }
 .homeSection i {
-  font-size: 1.5rem !important;
+  font-size: 1.2rem !important;
 }
 
 .homeImg img {
@@ -293,6 +293,10 @@ code {
 
 .twitter:hover {
   color: rgb(53, 142, 224);
+}
+
+.github:hover {
+  color: #B9BBBD;
 }
 
 .bx {
