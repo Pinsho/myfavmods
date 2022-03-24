@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/myfavmods/static/css/main.b2056cd0.css",
+    "main.css": "/myfavmods/static/css/main.72ecf897.css",
     "main.js": "/myfavmods/static/js/main.2d72d88b.js",
     "static/media/daw.png": "/myfavmods/static/media/daw.9ac4c408ce0125095e3e.png",
     "static/media/ac.png": "/myfavmods/static/media/ac.b973acec4aed00090f1d.png",
     "static/media/msfs2020.png": "/myfavmods/static/media/msfs2020.7b10de83970577e2a87d.png",
     "index.html": "/myfavmods/index.html",
-    "main.b2056cd0.css.map": "/myfavmods/static/css/main.b2056cd0.css.map",
+    "main.72ecf897.css.map": "/myfavmods/static/css/main.72ecf897.css.map",
     "main.2d72d88b.js.map": "/myfavmods/static/js/main.2d72d88b.js.map"
   },
   "entrypoints": [
-    "static/css/main.b2056cd0.css",
+    "static/css/main.72ecf897.css",
     "static/js/main.2d72d88b.js"
   ]
 }
