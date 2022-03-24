@@ -1,15 +1,17 @@
 .searchContainer {
     display: flex;
     justify-content: center;
-    margin: 10px;
+    margin-top: 6px;
 }
 
 .searchBox {
+    width: 21rem;
     position: relative;
 }
 
 .searchInput {
-    border-radius: 12px;
+    border-radius: 15px;
+    width: 100%;
     border: none;
     height: 30px;
     padding: 5px 35px 5px 10px;
