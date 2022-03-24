@@ -94,7 +94,7 @@ export function MusicModsGrid() {
                     <MusicVstCard key={vst.id} vst={vst} />
                 ))}
             </ul>
-            <div className={styles.maintitleSamples} id="samples">Samples</div>
+            <div className={styles.maintitleMusicSamples} id="samples">Samples</div>
             <ul className={styles.grid}>
                 {samples.map((sample) => (
                     <MusicSamplesCard key={sample.id} sample={sample} />
