@@ -39,7 +39,7 @@ export default class NavbarComp extends Component {
                                     <NavDropdown.Item as={Link} to="/assettocorsa">Assetto Corsa</NavDropdown.Item>
                                     <NavDropdown.Item as={Link} to="/rfactor2">rFactor 2</NavDropdown.Item>
                                 </NavDropdown>
-                                <Nav.Link as={Link} to="/musicproduction">Muscic Production</Nav.Link>
+                                <Nav.Link as={Link} to="/musicproduction">Music Production</Nav.Link>
                                 {/* <Nav.Link as={Link} to="/contact">Contact</Nav.Link> */}
                             </Nav>
                         </Navbar.Collapse>
