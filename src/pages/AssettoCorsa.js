@@ -12,7 +12,7 @@ export default class AssettoCorsa extends Component{
                         <img src={logoac} height={64} alt="Assetto Corsa"/>
                         <span className='long title'>Assetto Corsa</span>
                     </div>
-                    <Search/>
+                    {/* <Search/> */}
                     <div id="linksContainer">
                         <div className='links'>
                             <span><a href="#cars">Cars</a></span>

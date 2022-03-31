@@ -17,7 +17,7 @@ export function DCSModsGrid() {
     const [isLoading, SetIsLoading] = useState(true);
     
     function useQuery() {
-        return new  URLSearchParams(useLocation().search);
+        return new URLSearchParams(useLocation().search);
     }
 
     const query = useQuery();

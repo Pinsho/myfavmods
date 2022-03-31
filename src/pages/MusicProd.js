@@ -12,7 +12,7 @@ export default class MusicProd extends Component{
                         <img src={logodaw} height={64} alt="Music Production"/>
                         <span className='long title'>Music Production</span>
                     </div>
-                    <Search/>
+                    {/* <Search/> */}
                     <div id="linksContainer">
                         <div className='links'>
                             <span><a href="#daws">DAWs</a></span>

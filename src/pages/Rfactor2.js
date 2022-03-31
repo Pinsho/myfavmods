@@ -12,7 +12,7 @@ export default class Rfactor2 extends Component{
                         <img src={logorf2} height={64} alt="rFactor 2"/>
                         <span className='long title'>rFactor 2</span>
                     </div>
-                    <Search/>
+                    {/* <Search/> */}
                     <div id="linksContainer">
                         <div className='links'>
                             <span><a href="#cars">Cars</a></span>

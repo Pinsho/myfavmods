@@ -13,7 +13,7 @@ export default class DCS extends Component{
                         <img src={logodcs} height={64} alt="DCS World"/>
                         <span className='long title'>Digital Combat Simulator World</span>
                     </div>
-                    <Search/>
+                    {/* <Search/> */}
                     <div id="linksContainer">
                         <div className='links'>
                             <span><a href="#mods">Mods</a></span>

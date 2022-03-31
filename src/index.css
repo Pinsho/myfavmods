@@ -296,7 +296,7 @@ code {
 }
 
 .github:hover {
-  color: #B9BBBD;
+  color: #b9bbbd;
 }
 
 .bx {
@@ -320,13 +320,8 @@ code {
 }
 
 .navbar-brand {
-  padding-left: 0.8rem;
+  /* padding-left: 0.8rem; */
   margin-right: 3rem;
-}
-
-.navbar-dark .navbar-toggler {
-  margin-right: 1em;
-  /* border: none; */
 }
 
 .dropdown-item.active,
@@ -373,4 +368,15 @@ code {
 
 .navbar-toggler:focus {
   box-shadow: none;
+}
+
+.btn-dark {
+  color: #fff;
+  border-color: #ffffff !important;
+}
+
+.btn-dark:hover {
+  color: #212529;
+  background-color: #ffffff;
+  border-color: #212529;
 }

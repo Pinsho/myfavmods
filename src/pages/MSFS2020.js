@@ -12,7 +12,7 @@ export default class MSFS2020 extends Component{
                         <img src={logomsfs} height={64} alt="Miscrosoft Flight Simulator 2020"/>
                         <span className='long title'>Miscrosoft Flight Simulator 2020</span>
                     </div>
-                    <Search/>
+                    {/* <Search/> */}
                     <div id="linksContainer">
                         <div className='links'>
                             <span><a href="#addons">Addons</a></span>
