@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { DCSModsGrid } from "../components/DCSModsGrid";
 import logodcs from '../img/dcs.png';
-import { Search } from '../components/Search';
 
 export default class DCS extends Component{
     render() {
@@ -13,7 +12,6 @@ export default class DCS extends Component{
                         <img src={logodcs} height={64} alt="DCS World"/>
                         <span className='long title'>Digital Combat Simulator World</span>
                     </div>
-                    {/* <Search/> */}
                     <div id="linksContainer">
                         <div className='links'>
                             <span><a href="#mods">Mods</a></span>

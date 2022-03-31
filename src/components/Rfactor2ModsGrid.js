@@ -5,6 +5,7 @@ import { Rfactor2OtherCard } from './Rfactor2OtherCard';
 import Airtable from 'airtable';
 import React, { useEffect, useState } from 'react';
 import { Spinner } from './Spinner';
+import NoResults from '../pages/NoResults';
 import { useLocation } from 'react-router-dom';
 
 const base = new Airtable({ apiKey: "key03qIMV5bFoWdvj" }).base('appxdFddKFJGA9LAb');
@@ -81,6 +82,12 @@ export function Rfactor2ModsGrid() {
     if (isLoading){
         return(
             <Spinner/>
+        )
+    }
+
+    if(cars.length === 0 && tracks.length === 0 && others.length === 0){
+        return(
+            <NoResults/>
         )
     }
 

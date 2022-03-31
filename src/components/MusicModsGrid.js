@@ -5,6 +5,7 @@ import { MusicSamplesCard } from './MusicSamplesCard';
 import Airtable from 'airtable';
 import React, { useEffect, useState } from 'react';
 import { Spinner } from './Spinner';
+import NoResults from '../pages/NoResults';
 import { useLocation } from 'react-router-dom';
 
 const base = new Airtable({ apiKey: "key03qIMV5bFoWdvj" }).base('appxdFddKFJGA9LAb');
@@ -81,6 +82,12 @@ export function MusicModsGrid() {
     if (isLoading){
         return(
             <Spinner/>
+        )
+    }
+
+    if(daws.length === 0 && vsts.length === 0 && samples.length === 0){
+        return(
+            <NoResults/>
         )
     }
 

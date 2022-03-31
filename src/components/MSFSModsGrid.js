@@ -7,6 +7,7 @@ import Airtable from 'airtable';
 import React, { useEffect, useState } from 'react';
 import { Spinner } from './Spinner';
 import { useLocation } from 'react-router-dom';
+import NoResults from '../pages/NoResults';
 
 const base = new Airtable({ apiKey: "key03qIMV5bFoWdvj" }).base('appxdFddKFJGA9LAb');
 
@@ -98,6 +99,12 @@ export function MSFSModsGrid() {
     if (isLoading){
         return(
             <Spinner/>
+        )
+    }
+
+    if(mods.length === 0 && airports.length === 0 && liveries.length === 0 && others.length === 0){
+        return(
+            <NoResults/>
         )
     }
 

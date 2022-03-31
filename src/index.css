@@ -380,3 +380,7 @@ code {
   background-color: #ffffff;
   border-color: #212529;
 }
+
+.iconResults {
+  font-size: 3rem !important;
+}
