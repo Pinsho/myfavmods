@@ -1,14 +1,16 @@
 import styles from '../css/Grid.module.css';
+import '../css/Grid.module.css';
 import { DCSModCard } from './DCSModCard';
 import { DCSMissionCard } from './DCSMissionCard';
 import { DCSOtherCard } from './DCSOtherCard';
 import Airtable from 'airtable';
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { Spinner } from './Spinner';
 import { useLocation } from 'react-router-dom';
 import NoResults from '../pages/NoResults';
 
 const base = new Airtable({ apiKey: "key03qIMV5bFoWdvj" }).base('appxdFddKFJGA9LAb');
+
 
 export function DCSModsGrid() {
 
@@ -81,11 +83,14 @@ export function DCSModsGrid() {
                 fetchNextPage();
                 SetIsLoading(false)
             })
+            
     }, [search]);
+
+    
 
     if (isLoading){
         return(
-                <Spinner/>
+            <Spinner/>
         )
     }
     
@@ -94,7 +99,7 @@ export function DCSModsGrid() {
             <NoResults/>
         )
     }
-
+    
     return (
         <>
             <div className={styles.maintitleDCSMods} id="mods">MODs</div>

@@ -14,6 +14,10 @@
   justify-content: center;
 }
 
+.maintitleNoResults {
+  display: none;
+}
+
 .maintitleDCSMods {
   color: #fff;
   background-color: grey;
@@ -26,9 +30,16 @@
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.maintitleNoResults {
-  color: rgb(0, 255, 55);
-  background-color: rgb(247, 16, 16);
+.maintitleDCSMods {
+  color: #fff;
+  background-color: grey;
+  margin-bottom: 10px;
+  padding: 10px 25px;
+  width: 125px;
+  text-align: left;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .maintitleDCSMissions {
