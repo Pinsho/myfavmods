@@ -1,5 +1,5 @@
 import { useState } from "react";
-import styles from "../css/Search.module.css";
+/* import styles from "../css/Search.module.css"; */
 import { useNavigate } from 'react-router-dom';
 import { Form, FormControl, Button } from 'react-bootstrap';
 

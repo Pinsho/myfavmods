@@ -4,7 +4,7 @@ import { DCSModCard } from './DCSModCard';
 import { DCSMissionCard } from './DCSMissionCard';
 import { DCSOtherCard } from './DCSOtherCard';
 import Airtable from 'airtable';
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Spinner } from './Spinner';
 import { useLocation } from 'react-router-dom';
 import NoResults from '../pages/NoResults';
