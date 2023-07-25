@@ -12,8 +12,10 @@ import DCS from '../pages/DCS';
 import MSFS2020 from '../pages/MSFS2020';
 import AssettoCorsa from '../pages/AssettoCorsa';
 import ACCompetizione from '../pages/ACCompetizione';
+import AMS2 from '../pages/Automobilista2';
 import Rfactor2 from '../pages/Rfactor2';
 import MusicProd from '../pages/MusicProd';
+import Automobilista2 from '../pages/Automobilista2';
 
 export default class NavbarComp extends Component {
     render() {
@@ -64,6 +66,7 @@ export default class NavbarComp extends Component {
                                 <NavDropdown title="Motor Sim" id="collasible-nav-dropdown">
                                     <NavDropdown.Item as={Link} to="/assettocorsa" href="/assettocorsa">Assetto Corsa</NavDropdown.Item>
                                     <NavDropdown.Item as={Link} to="/accompetizione" href="/accompetizione">Assetto Corsa Competizione</NavDropdown.Item>
+                                    <NavDropdown.Item as={Link} to="/automobilista2" href="/automobilista2">Automobilista 2</NavDropdown.Item>
                                     <NavDropdown.Item as={Link} to="/rfactor2" href="/rfactor2">rFactor 2</NavDropdown.Item>
                                 </NavDropdown>
                                 <Nav.Link as={Link} to="/musicproduction" href="/musicproduction">Music Production</Nav.Link>
@@ -83,6 +86,7 @@ export default class NavbarComp extends Component {
                         <Route path="/msfs2020" element={<MSFS2020/>}/>
                         <Route path="/rfactor2" element={<Rfactor2/>}/>
                         <Route path="/assettocorsa" element={<AssettoCorsa/>}/>
+                        <Route path="/automobilista2" element={<Automobilista2/>}/>
                         <Route path="/accompetizione" element={<ACCompetizione/>}/>
                         <Route path="/musicproduction" element={<MusicProd/>}/>
                     </Routes>

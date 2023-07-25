@@ -3,6 +3,7 @@ import logodcs from '../img/dcs.png';
 import logomsfs from '../img/msfs2020.png';
 import logoac from '../img/ac.png';
 import logoaccompetizione from '../img/accompetizione.png';
+import logoams2 from '../img/ams2.png';
 import logorf2 from '../img/rfactor2.png';
 import logodaw from '../img/daw.png';
 import { Link } from "react-router-dom";
@@ -35,6 +36,10 @@ export default class Home extends Component {
                             <div className='wrapper'>
                                 <Link to="/assettocorsacompetizione"><img src={logoaccompetizione} height={64} alt="Assetto Corsa Competizione"/></Link>
                                 <span className='long'><Link to="/accompetizione">Assetto Corsa Competizione</Link></span>
+                            </div>
+                            <div className='wrapper'>
+                                <Link to="/automobilista2"><img src={logoams2} height={64} alt="Automobilista 2"/></Link>
+                                <span className='long'><Link to="/automobilista2">Automobilista 2</Link></span>
                             </div>
                             <div className='wrapper'>
                                 <Link to="/rfactor2"><img src={logorf2} height={64} alt="rFactor 2"/></Link>
