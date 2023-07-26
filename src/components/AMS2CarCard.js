@@ -9,7 +9,7 @@ export const AMS2CarCard = ({ car }) => {
                 <div className={styles.type}><i className='bx bxs-bookmark' ></i>Category: <div className={styles.right}>{car.fields.TypeName}</div></div>
                 <div className={styles.type}><i className='bx bxs-tachometer'></i>Power: <div className={styles.right}>{car.fields.BHP}</div></div>
                 <div className={styles.type}><i className='bx bxs-car' ></i>Wheel Drive: <div className={styles.right}>{car.fields.WheelDriveName}</div></div>
-                <div><a href={car.fields.URL} target="_blank" rel="noreferrer" className={styles.downloadButtonAC}>Download</a></div>
+                <div><a href={car.fields.URL} target="_blank" rel="noreferrer" className={styles.downloadButtonAMS2}>Download</a></div>
             </div>
         </li>
     );

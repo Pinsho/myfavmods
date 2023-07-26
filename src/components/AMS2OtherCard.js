@@ -7,7 +7,7 @@ export const AMS2OtherCard = ({ other }) => {
             <div className={styles.cardBody}>
                 <div className={styles.title}>{other.fields.Name}</div>
                 <div className={styles.type}><i className='bx bxs-info-circle' ></i>Type: <div className={styles.right}>{other.fields.TypeName}</div></div>
-                <div><a href={other.fields.URL} target="_blank" rel="noreferrer" className={styles.downloadButtonAC}>Download</a></div>
+                <div><a href={other.fields.URL} target="_blank" rel="noreferrer" className={styles.downloadButtonAMS2}>Download</a></div>
             </div>
         </li>
     );

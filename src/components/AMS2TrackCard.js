@@ -11,7 +11,7 @@ export const AMS2TrackCard = ({ track }) => {
                 <div className={styles.title}>{track.fields.Name}</div>
                 <div className={styles.type}><i className='bx bxs-map' ></i>Location: <div className={styles.right}>{track.fields.Location}</div></div>
                 <div className={styles.type}><i className='bx bxs-ruler' ></i>Length: <div className={styles.right}>{track.fields.Length}</div></div>
-                <div><a href={track.fields.URL} target="_blank" rel="noreferrer" className={styles.downloadButtonAC}>Download</a></div>
+                <div><a href={track.fields.URL} target="_blank" rel="noreferrer" className={styles.downloadButtonAMS2}>Download</a></div>
             </div>
         </li>
     );
