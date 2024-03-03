@@ -8,7 +8,7 @@ import { Spinner } from './Spinner';
 import NoResults from '../pages/NoResults';
 import { useLocation } from 'react-router-dom';
 
-const base = new Airtable({ apiKey: "key03qIMV5bFoWdvj" }).base('appxdFddKFJGA9LAb');
+const base = new Airtable({ apiKey: 'patFxPf3jl4UgClNb.875a0a95d8fb838a3ccd507b9e768ed60c603c09fb68477d8e4d88e09bc8bc3e' }).base('appxdFddKFJGA9LAb');
 
 export function MusicModsGrid() {
     const [daws, setDaws] =useState([])
