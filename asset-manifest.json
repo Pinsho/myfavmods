@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/myfavmods/static/css/main.99b87dc7.css",
-    "main.js": "/myfavmods/static/js/main.7e77fde8.js",
+    "main.css": "/myfavmods/static/css/main.459380f4.css",
+    "main.js": "/myfavmods/static/js/main.7e3f7ae2.js",
     "static/media/daw.png": "/myfavmods/static/media/daw.9ac4c408ce0125095e3e.png",
     "static/media/ams2.png": "/myfavmods/static/media/ams2.a0d87fd57e653a44ba1b.png",
     "static/media/ac.png": "/myfavmods/static/media/ac.b973acec4aed00090f1d.png",
     "static/media/msfs2020.png": "/myfavmods/static/media/msfs2020.7b10de83970577e2a87d.png",
     "static/media/accompetizione.png": "/myfavmods/static/media/accompetizione.8900a4121f79c1d7ae83.png",
     "index.html": "/myfavmods/index.html",
-    "main.99b87dc7.css.map": "/myfavmods/static/css/main.99b87dc7.css.map",
-    "main.7e77fde8.js.map": "/myfavmods/static/js/main.7e77fde8.js.map"
+    "main.459380f4.css.map": "/myfavmods/static/css/main.459380f4.css.map",
+    "main.7e3f7ae2.js.map": "/myfavmods/static/js/main.7e3f7ae2.js.map"
   },
   "entrypoints": [
-    "static/css/main.99b87dc7.css",
-    "static/js/main.7e77fde8.js"
+    "static/css/main.459380f4.css",
+    "static/js/main.7e3f7ae2.js"
   ]
 }
